@@ -1,0 +1,148 @@
+$(document).ready(function(){
+    console.info("ready");
+});
+
+
+function showCSKA(){
+    $("#mainDiv").hide();
+    $("#ArsenalDiv").hide();
+    $("#BarcaDiv").hide();
+    $("#RMDiv").hide();
+    $("#BMDiv").hide();
+    $("#MUDiv").hide();
+    $("#LivDiv").hide();
+    $("#LevskiDiv").hide();
+    $("#LudogorecDiv").hide();
+    $("#JuveDiv").hide();
+    $("#CSKADiv").show();
+}
+function showBarca(){
+    $("#mainDiv").hide();
+    $("#ArsenalDiv").hide();
+    $("#RMDiv").hide();
+    $("#BMDiv").hide();
+    $("#MUDiv").hide();
+    $("#LivDiv").hide();
+    $("#LevskiDiv").hide();
+    $("#LudogorecDiv").hide();
+    $("#JuveDiv").hide();
+    $("#CSKADiv").hide();
+    $("#BarcaDiv").show();
+}
+function showRealMadrid(){
+    $("#mainDiv").hide();
+    $("#ArsenalDiv").hide();
+    $("#BMDiv").hide();
+    $("#MUDiv").hide();
+    $("#LivDiv").hide();
+    $("#LevskiDiv").hide();
+    $("#LudogorecDiv").hide();
+    $("#JuveDiv").hide();
+    $("#CSKADiv").hide();
+    $("#BarcaDiv").hide();
+    $("#RMDiv").show();
+}
+function showLevski(){
+    $("#mainDiv").hide();
+    $("#ArsenalDiv").hide();
+    $("#BMDiv").hide();
+    $("#MUDiv").hide();
+    $("#LivDiv").hide();
+    $("#LudogorecDiv").hide();
+    $("#JuveDiv").hide();
+    $("#CSKADiv").hide();
+    $("#BarcaDiv").hide();
+    $("#RMDiv").hide();
+    $("#LevskiDiv").show();
+}
+function showJuve(){
+    $("#mainDiv").hide();
+    $("#ArsenalDiv").hide();
+    $("#BMDiv").hide();
+    $("#MUDiv").hide();
+    $("#LivDiv").hide();
+    $("#LudogorecDiv").hide();
+    $("#CSKADiv").hide();
+    $("#BarcaDiv").hide();
+    $("#RMDiv").hide();
+    $("#LevskiDiv").hide();
+    $("#JuveDiv").show();
+}
+function showArsenal(){
+    $("#mainDiv").hide();
+    $("#BMDiv").hide();
+    $("#MUDiv").hide();
+    $("#LivDiv").hide();
+    $("#LudogorecDiv").hide();
+    $("#CSKADiv").hide();
+    $("#BarcaDiv").hide();
+    $("#RMDiv").hide();
+    $("#LevskiDiv").hide();
+    $("#JuveDiv").hide();
+    $("#ArsenalDiv").show();
+}
+function showLudogorec(){
+    $("#mainDiv").hide();
+    $("#BMDiv").hide();
+    $("#MUDiv").hide();
+    $("#LivDiv").hide();
+    $("#CSKADiv").hide();
+    $("#BarcaDiv").hide();
+    $("#RMDiv").hide();
+    $("#LevskiDiv").hide();
+    $("#JuveDiv").hide();
+    $("#ArsenalDiv").hide();
+    $("#LudogorecDiv").show();
+}
+function showLiv(){
+    $("#mainDiv").hide();
+    $("#BMDiv").hide();
+    $("#MUDiv").hide();
+    $("#CSKADiv").hide();
+    $("#BarcaDiv").hide();
+    $("#RMDiv").hide();
+    $("#LevskiDiv").hide();
+    $("#JuveDiv").hide();
+    $("#ArsenalDiv").hide();
+    $("#LudogorecDiv").hide();
+    $("#LivDiv").show();
+}
+function showMU(){
+    $("#mainDiv").hide();
+    $("#BMDiv").hide();
+    $("#CSKADiv").hide();
+    $("#BarcaDiv").hide();
+    $("#RMDiv").hide();
+    $("#LevskiDiv").hide();
+    $("#JuveDiv").hide();
+    $("#ArsenalDiv").hide();
+    $("#LudogorecDiv").hide();
+    $("#LivDiv").hide();
+    $("#MUDiv").show();
+}
+function showBM(){
+    $("#mainDiv").hide();
+    $("#CSKADiv").hide();
+    $("#BarcaDiv").hide();
+    $("#RMDiv").hide();
+    $("#LevskiDiv").hide();
+    $("#JuveDiv").hide();
+    $("#ArsenalDiv").hide();
+    $("#LudogorecDiv").hide();
+    $("#LivDiv").hide();
+    $("#MUDiv").hide();
+    $("#BMDiv").show();
+}
+function showLevski(){
+    $("#mainDiv").hide();
+    $("#CSKADiv").hide();
+    $("#BarcaDiv").hide();
+    $("#RMDiv").hide();
+    $("#JuveDiv").hide();
+    $("#ArsenalDiv").hide();
+    $("#LudogorecDiv").hide();
+    $("#LivDiv").hide();
+    $("#MUDiv").hide();
+    $("#BMDiv").hide();
+    $("#LevskiDiv").show();
+}

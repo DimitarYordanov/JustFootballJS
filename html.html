@@ -1,0 +1,2082 @@
+<head>
+<link rel="stylesheet" type="text/css" href="css.css" media="screen" />
+<script src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
+<script src="js.js"></script>
+</head>
+<body>
+    <div id="mainDiv">
+        <nav id="team_wrap">
+            <div class="wrap">
+                <div id="teams" class="clearfix" style="display: block;">
+                        <ul class="clearfix">
+                                <li>
+                   <button onclick="showCSKA()" id="cskaButtons">
+                        <img alt="ЦСКА" src="https://m.netinfo.bg/gong/images/teams/cska.png" height="41" width="41">
+                    </button>
+                    <!-- <a class="gtm-Header-Team" data-pos="main" href="https://cska.gong.bg/" title="ЦСКА">
+                        <img class="ga_team" alt="ЦСКА" src="https://m.netinfo.bg/gong/images/teams/cska_small.png">
+                        
+                    </a>  -->
+                    <!-- <div class="menu_drop wrap clearfix">
+                        <p><a class="gtm-Header-Team" data-pos="title" href="https://cska.gong.bg/" title="ЦСКА">ЦСКА</a></p>
+                        
+                        <a class="gtm-Header-Team" data-pos="all" href="https://cska.gong.bg/"><span>Всичко за ЦСКА</span></a>
+                    </div> -->
+                </li>
+                                <li>
+                                     <button onclick="showLevski()" >
+                                            <img alt="Левски" src="https://m.netinfo.bg/gong/images/teams/logo_new100.png" height="41" width="41">
+                                      </button>
+                    <!-- <div class="menu_drop wrap clearfix">
+                        <p><a class="gtm-Header-Team" data-pos="title" href="https://levski.gong.bg/" title="Левски">Левски</a></p>
+                        
+                        <a class="gtm-Header-Team" data-pos="all" href="https://levski.gong.bg/"><span>Всичко за Левски</span></a>
+                    </div> -->
+                </li>
+                                <li>
+                                        <button onclick="showLudogorec()" >
+                                                <img alt="Лудогорец" src="https://m.netinfo.bg/gong/images/teams/ludogoretz1.png" height="41" width="41">
+                                          </button>
+                    <!-- <div class="menu_drop wrap clearfix">
+                        <p><a class="gtm-Header-Team" data-pos="title" href="https://ludogorets.gong.bg/" title="Лудогорец">Лудогорец</a></p>
+                        
+                        <a class="gtm-Header-Team" data-pos="all" href="https://ludogorets.gong.bg/"><span>Всичко за Лудогорец</span></a>
+                    </div> -->
+                </li>
+                        
+                 <li>
+                        <button onclick="showBarca()">
+                                <img alt="Барселона" src="https://m.netinfo.bg/gong/images/teams/fcb.png" height="41" width="41">
+                        
+                        </button>>
+                    <!-- <div class="menu_drop wrap clearfix">
+                        <p><a class="gtm-Header-Team" data-pos="title" href="https://barcelona.gong.bg/" title="Барселона">Барселона</a></p>
+                        
+                        <a class="gtm-Header-Team" data-pos="all" href="https://barcelona.gong.bg/"><span>Всичко за Барселона</span></a>
+                    </div> -->
+                </li>
+                                <li>
+                                        <button onclick="showRealMadrid()">
+                                                <img alt="Реал Мадрид" src="https://m.netinfo.bg/gong/images/teams/realmadrid.png" height="41" width="41">
+                                                
+                                                </button>>
+                    <!-- <div class="menu_drop wrap clearfix">
+                        <p><a class="gtm-Header-Team" data-pos="title" href="https://real.gong.bg/" title="Реал Мадрид">Реал Мадрид</a></p>
+                        
+                        <a class="gtm-Header-Team" data-pos="all" href="https://real.gong.bg/"><span>Всичко за Реал Мадрид</span></a>
+                    </div> -->
+                </li>
+                                <li>
+                                        <button onclick="showBM()">
+                                                <img alt="Байерн" src="https://m.netinfo.bg/gong/images/teams/bayernmunchen.png" height="41" width="41">
+                                                
+                                                </button>>
+                    <!-- <div class="menu_drop wrap clearfix">
+                        <p><a class="gtm-Header-Team" data-pos="title" href="https://bayern.gong.bg/" title="Байерн">Байерн</a></p>
+                        
+                        <a class="gtm-Header-Team" data-pos="all" href="https://bayern.gong.bg/"><span>Всичко за Байерн</span></a>
+                    </div> -->
+                </li>
+                                <li>
+                                        <button onclick="showMU()">
+                                                <img alt="Манчестър Юнайтед" src="https://m.netinfo.bg/gong/images/teams/manchesterunited.png" height="41" width="41">
+                                                
+                                                </button>>
+                    <!-- <div class="menu_drop wrap clearfix">
+                        <p><a class="gtm-Header-Team" data-pos="title" href="https://manchester.gong.bg/" title="Манчестър Юнайтед">Манчестър Юнайтед</a></p>
+                        
+                        <a class="gtm-Header-Team" data-pos="all" href="https://manchester.gong.bg/"><span>Всичко за Манчестър Юнайтед</span></a>
+                    </div> -->
+                </li>
+                                <li>
+                                        <button onclick="showLiv()">
+                                                <img alt="Ливърпул" src="https://m.netinfo.bg/gong/images/teams/liverpoolfc.png" height="41" width="41">
+                                                
+                                                </button>>
+                    <!-- <div class="menu_drop wrap clearfix">
+                        <p><a class="gtm-Header-Team" data-pos="title" href="https://liverpool.gong.bg/" title="Ливърпул">Ливърпул</a></p>
+                        
+                        <a class="gtm-Header-Team" data-pos="all" href="https://liverpool.gong.bg/"><span>Всичко за Ливърпул</span></a>
+                    </div> -->
+                </li>
+                                
+                                <li>
+                                        <button onclick="showArsenal()">
+                                                <img alt="Арсенал" src="https://m.netinfo.bg/gong/images/teams/arsenalfc.png" height="41" width="41">
+                                                
+                                                </button>>
+                    <!-- <div class="menu_drop wrap clearfix">
+                        <p><a class="gtm-Header-Team" data-pos="title" href="https://arsenal.gong.bg/" title="Арсенал">Арсенал</a></p>
+                        
+                        <a class="gtm-Header-Team" data-pos="all" href="https://arsenal.gong.bg/"><span>Всичко за Арсенал</span></a>
+                    </div> -->
+                </li>
+                                <li>
+                                        <button onclick="showJuve()">
+                                                <img alt="Ювентус" src="https://m.netinfo.bg/gong/images/teams/juventus_1.png" height="41" width="41">
+                                                
+                                                </button>>
+                    <!-- <div class="menu_drop wrap clearfix">
+                        <p><a class="gtm-Header-Team" data-pos="title" href="https://juventus.gong.bg/" title="Ювентус">Ювентус</a></p>
+                        
+                        <a class="gtm-Header-Team" data-pos="all" href="https://juventus.gong.bg/"><span>Всичко за Ювентус</span></a>
+                    </div> -->
+                </li>
+                                
+            </ul>
+                </div>
+                <a href="#" id="menu_more" class=""></a>
+            </div>
+        </nav>
+    </div>
+<div style="display:none;" id="CSKADiv">
+        <nav id="team_wrap">
+                <div >
+                        <nav id="team_wrap">
+                            <div class="wrap">
+                                <div id="teams" class="clearfix" style="display: block;">
+                                    <ul class="clearfix">
+                                                        <li>
+                                           <button onclick="showCSKA()" id="cskaButtons">
+                                                <img alt="ЦСКА" src="https://m.netinfo.bg/gong/images/teams/cska.png" height="41" width="41">
+                                            </button>
+                                            <!-- <a class="gtm-Header-Team" data-pos="main" href="https://cska.gong.bg/" title="ЦСКА">
+                                                <img class="ga_team" alt="ЦСКА" src="https://m.netinfo.bg/gong/images/teams/cska_small.png">
+                                                
+                                            </a>  -->
+                                            <!-- <div class="menu_drop wrap clearfix">
+                                                <p><a class="gtm-Header-Team" data-pos="title" href="https://cska.gong.bg/" title="ЦСКА">ЦСКА</a></p>
+                                                
+                                                <a class="gtm-Header-Team" data-pos="all" href="https://cska.gong.bg/"><span>Всичко за ЦСКА</span></a>
+                                            </div> -->
+                                        </li>
+                                                        <li>
+                                                             <button onclick="showLevski()" >
+                                                                    <img alt="Левски" src="https://m.netinfo.bg/gong/images/teams/logo_new100.png" height="41" width="41">
+                                                              </button>
+                                            <!-- <div class="menu_drop wrap clearfix">
+                                                <p><a class="gtm-Header-Team" data-pos="title" href="https://levski.gong.bg/" title="Левски">Левски</a></p>
+                                                
+                                                <a class="gtm-Header-Team" data-pos="all" href="https://levski.gong.bg/"><span>Всичко за Левски</span></a>
+                                            </div> -->
+                                        </li>
+                                                        <li>
+                                                                <button onclick="showLudogorec()" >
+                                                                        <img alt="Лудогорец" src="https://m.netinfo.bg/gong/images/teams/ludogoretz1.png" height="41" width="41">
+                                                                  </button>
+                                            <!-- <div class="menu_drop wrap clearfix">
+                                                <p><a class="gtm-Header-Team" data-pos="title" href="https://ludogorets.gong.bg/" title="Лудогорец">Лудогорец</a></p>
+                                                
+                                                <a class="gtm-Header-Team" data-pos="all" href="https://ludogorets.gong.bg/"><span>Всичко за Лудогорец</span></a>
+                                            </div> -->
+                                        </li>
+                                                
+                                         <li>
+                                                <button onclick="showBarca()">
+                                                        <img alt="Барселона" src="https://m.netinfo.bg/gong/images/teams/fcb.png" height="41" width="41">
+                                                
+                                                </button>>
+                                            <!-- <div class="menu_drop wrap clearfix">
+                                                <p><a class="gtm-Header-Team" data-pos="title" href="https://barcelona.gong.bg/" title="Барселона">Барселона</a></p>
+                                                
+                                                <a class="gtm-Header-Team" data-pos="all" href="https://barcelona.gong.bg/"><span>Всичко за Барселона</span></a>
+                                            </div> -->
+                                        </li>
+                                                        <li>
+                                                                <button onclick="showRealMadrid()">
+                                                                        <img alt="Реал Мадрид" src="https://m.netinfo.bg/gong/images/teams/realmadrid.png" height="41" width="41">
+                                                                        
+                                                                        </button>>
+                                            <!-- <div class="menu_drop wrap clearfix">
+                                                <p><a class="gtm-Header-Team" data-pos="title" href="https://real.gong.bg/" title="Реал Мадрид">Реал Мадрид</a></p>
+                                                
+                                                <a class="gtm-Header-Team" data-pos="all" href="https://real.gong.bg/"><span>Всичко за Реал Мадрид</span></a>
+                                            </div> -->
+                                        </li>
+                                                        <li>
+                                                                <button onclick="showBM()">
+                                                                        <img alt="Байерн" src="https://m.netinfo.bg/gong/images/teams/bayernmunchen.png" height="41" width="41">
+                                                                        
+                                                                        </button>>
+                                            <!-- <div class="menu_drop wrap clearfix">
+                                                <p><a class="gtm-Header-Team" data-pos="title" href="https://bayern.gong.bg/" title="Байерн">Байерн</a></p>
+                                                
+                                                <a class="gtm-Header-Team" data-pos="all" href="https://bayern.gong.bg/"><span>Всичко за Байерн</span></a>
+                                            </div> -->
+                                        </li>
+                                                        <li>
+                                                                <button onclick="showMU()">
+                                                                        <img alt="Манчестър Юнайтед" src="https://m.netinfo.bg/gong/images/teams/manchesterunited.png" height="41" width="41">
+                                                                        
+                                                                        </button>>
+                                            <!-- <div class="menu_drop wrap clearfix">
+                                                <p><a class="gtm-Header-Team" data-pos="title" href="https://manchester.gong.bg/" title="Манчестър Юнайтед">Манчестър Юнайтед</a></p>
+                                                
+                                                <a class="gtm-Header-Team" data-pos="all" href="https://manchester.gong.bg/"><span>Всичко за Манчестър Юнайтед</span></a>
+                                            </div> -->
+                                        </li>
+                                                        <li>
+                                                                <button onclick="showLiv()">
+                                                                        <img alt="Ливърпул" src="https://m.netinfo.bg/gong/images/teams/liverpoolfc.png" height="41" width="41">
+                                                                        
+                                                                        </button>>
+                                            <!-- <div class="menu_drop wrap clearfix">
+                                                <p><a class="gtm-Header-Team" data-pos="title" href="https://liverpool.gong.bg/" title="Ливърпул">Ливърпул</a></p>
+                                                
+                                                <a class="gtm-Header-Team" data-pos="all" href="https://liverpool.gong.bg/"><span>Всичко за Ливърпул</span></a>
+                                            </div> -->
+                                        </li>
+                                                        
+                                                        <li>
+                                                                <button onclick="showArsenal()">
+                                                                        <img alt="Арсенал" src="https://m.netinfo.bg/gong/images/teams/arsenalfc.png" height="41" width="41">
+                                                                        
+                                                                        </button>>
+                                            <!-- <div class="menu_drop wrap clearfix">
+                                                <p><a class="gtm-Header-Team" data-pos="title" href="https://arsenal.gong.bg/" title="Арсенал">Арсенал</a></p>
+                                                
+                                                <a class="gtm-Header-Team" data-pos="all" href="https://arsenal.gong.bg/"><span>Всичко за Арсенал</span></a>
+                                            </div> -->
+                                        </li>
+                                                        <li>
+                                                                <button onclick="showJuve()">
+                                                                        <img alt="Ювентус" src="https://m.netinfo.bg/gong/images/teams/juventus_1.png" height="41" width="41">
+                                                                        
+                                                                        </button>>
+                                            <!-- <div class="menu_drop wrap clearfix">
+                                                <p><a class="gtm-Header-Team" data-pos="title" href="https://juventus.gong.bg/" title="Ювентус">Ювентус</a></p>
+                                                
+                                                <a class="gtm-Header-Team" data-pos="all" href="https://juventus.gong.bg/"><span>Всичко за Ювентус</span></a>
+                                            </div> -->
+                                        </li>
+                                                        
+                                    </ul>
+                                </div>
+                                <a href="#" id="menu_more" class=""></a>
+                            </div>
+                        </nav>
+                    </div>
+            <!--                                    -->
+            <nav id="menu_wrap">
+                <div class="menu-top-head">
+                <ul class="wrap_s clearfix">
+                    <!-- <li>
+                        <a class="gtm-Header-Main" data-pos="logo" href="https://gong.bg/" title="Gong.bg">
+                                                            <img alt="НАЧАЛО" src="https://m.netinfo.bg/gong/images/logo_10Birthday_white.png">
+                        </a>
+                    </li> -->
+            
+            
+                    
+                        <div class="teams_head">
+                            <a href="https://barcelona.gong.bg/">
+                                <img alt="ЦСКА" src="https://m.netinfo.bg/gong/images/teams/cska.png" height="111" width="111">
+                            </a>
+                            <!-- <h2>
+                                <a href="https://barcelona.gong.bg/">Барселона <span>barcelona.gong.bg</span></a>
+                            </h2> -->
+                        </div>
+            
+                  </ul>
+              </div>
+            
+                        <div class="second-section-nav">
+            
+                        
+                                                <div id="dateCarousel" class="first last">
+                                    
+                                    <div class="wrapper">
+                                        <div class="viewport">
+                                            <ul class="wrap_h clearfix">
+                                                
+                                                                                                                                                <li><a href="https://barcelona.gong.bg/" title="Новини" class="dateCarouselSelected ">Новини</a></li>
+                                                        
+                                                    
+                                                
+                                                                                                                                                <li><a href="https://barcelona.gong.bg/multimedia/video" title="Видео" class=" ">Видео</a></li>
+                                                        
+                                                    
+                                                
+                                                                                                                                                <li><a href="https://barcelona.gong.bg/multimedia/gallery" title="Галерии" class=" ">Галерии</a></li>
+                                                        
+                                                    
+                                                
+                                                                                                                                                <li><a href="https://barcelona.gong.bg/multimedia/audio" title="Аудио" class=" ">Аудио</a></li>
+                                                        
+                                                    
+                                                
+                                                                                                                                                <li><a href="https://barcelona.gong.bg/interview" title="Интервю" class=" ">Интервю</a></li>
+                                                        
+                                                    
+                                                
+                                                                                                                                                <li><a href="https://barcelona.gong.bg/comment" title="Коментар" class=" ">Коментар</a></li>
+                                                        
+                                                    
+                                                
+                                                                                                                                                <li><a href="https://barcelona.gong.bg/yellow" title="Жълто" class=" ">Жълто</a></li>
+                                                        
+                                                    
+                                                                                </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                                </div>
+                </nav>
+            
+</div>
+<div style="display:none;" id="BarcaDiv">
+        <nav id="team_wrap">
+                <div >
+                        <nav id="team_wrap">
+                            <div class="wrap">
+                                <div id="teams" class="clearfix" style="display: block;">
+                                        <ul class="clearfix">
+                                                <li>
+                                   <button onclick="showCSKA()" id="cskaButtons">
+                                        <img alt="ЦСКА" src="https://m.netinfo.bg/gong/images/teams/cska.png" height="41" width="41">
+                                    </button>
+                                    <!-- <a class="gtm-Header-Team" data-pos="main" href="https://cska.gong.bg/" title="ЦСКА">
+                                        <img class="ga_team" alt="ЦСКА" src="https://m.netinfo.bg/gong/images/teams/cska_small.png">
+                                        
+                                    </a>  -->
+                                    <!-- <div class="menu_drop wrap clearfix">
+                                        <p><a class="gtm-Header-Team" data-pos="title" href="https://cska.gong.bg/" title="ЦСКА">ЦСКА</a></p>
+                                        
+                                        <a class="gtm-Header-Team" data-pos="all" href="https://cska.gong.bg/"><span>Всичко за ЦСКА</span></a>
+                                    </div> -->
+                                </li>
+                                                <li>
+                                                     <button onclick="showLevski()" >
+                                                            <img alt="Левски" src="https://m.netinfo.bg/gong/images/teams/logo_new100.png" height="41" width="41">
+                                                      </button>
+                                    <!-- <div class="menu_drop wrap clearfix">
+                                        <p><a class="gtm-Header-Team" data-pos="title" href="https://levski.gong.bg/" title="Левски">Левски</a></p>
+                                        
+                                        <a class="gtm-Header-Team" data-pos="all" href="https://levski.gong.bg/"><span>Всичко за Левски</span></a>
+                                    </div> -->
+                                </li>
+                                                <li>
+                                                        <button onclick="showLudogorec()" >
+                                                                <img alt="Лудогорец" src="https://m.netinfo.bg/gong/images/teams/ludogoretz1.png" height="41" width="41">
+                                                          </button>
+                                    <!-- <div class="menu_drop wrap clearfix">
+                                        <p><a class="gtm-Header-Team" data-pos="title" href="https://ludogorets.gong.bg/" title="Лудогорец">Лудогорец</a></p>
+                                        
+                                        <a class="gtm-Header-Team" data-pos="all" href="https://ludogorets.gong.bg/"><span>Всичко за Лудогорец</span></a>
+                                    </div> -->
+                                </li>
+                                        
+                                 <li>
+                                        <button onclick="showBarca()">
+                                                <img alt="Барселона" src="https://m.netinfo.bg/gong/images/teams/fcb.png" height="41" width="41">
+                                        
+                                        </button>>
+                                    <!-- <div class="menu_drop wrap clearfix">
+                                        <p><a class="gtm-Header-Team" data-pos="title" href="https://barcelona.gong.bg/" title="Барселона">Барселона</a></p>
+                                        
+                                        <a class="gtm-Header-Team" data-pos="all" href="https://barcelona.gong.bg/"><span>Всичко за Барселона</span></a>
+                                    </div> -->
+                                </li>
+                                                <li>
+                                                        <button onclick="showRealMadrid()">
+                                                                <img alt="Реал Мадрид" src="https://m.netinfo.bg/gong/images/teams/realmadrid.png" height="41" width="41">
+                                                                
+                                                                </button>>
+                                    <!-- <div class="menu_drop wrap clearfix">
+                                        <p><a class="gtm-Header-Team" data-pos="title" href="https://real.gong.bg/" title="Реал Мадрид">Реал Мадрид</a></p>
+                                        
+                                        <a class="gtm-Header-Team" data-pos="all" href="https://real.gong.bg/"><span>Всичко за Реал Мадрид</span></a>
+                                    </div> -->
+                                </li>
+                                                <li>
+                                                        <button onclick="showBM()">
+                                                                <img alt="Байерн" src="https://m.netinfo.bg/gong/images/teams/bayernmunchen.png" height="41" width="41">
+                                                                
+                                                                </button>>
+                                    <!-- <div class="menu_drop wrap clearfix">
+                                        <p><a class="gtm-Header-Team" data-pos="title" href="https://bayern.gong.bg/" title="Байерн">Байерн</a></p>
+                                        
+                                        <a class="gtm-Header-Team" data-pos="all" href="https://bayern.gong.bg/"><span>Всичко за Байерн</span></a>
+                                    </div> -->
+                                </li>
+                                                <li>
+                                                        <button onclick="showMU()">
+                                                                <img alt="Манчестър Юнайтед" src="https://m.netinfo.bg/gong/images/teams/manchesterunited.png" height="41" width="41">
+                                                                
+                                                                </button>>
+                                    <!-- <div class="menu_drop wrap clearfix">
+                                        <p><a class="gtm-Header-Team" data-pos="title" href="https://manchester.gong.bg/" title="Манчестър Юнайтед">Манчестър Юнайтед</a></p>
+                                        
+                                        <a class="gtm-Header-Team" data-pos="all" href="https://manchester.gong.bg/"><span>Всичко за Манчестър Юнайтед</span></a>
+                                    </div> -->
+                                </li>
+                                                <li>
+                                                        <button onclick="showLiv()">
+                                                                <img alt="Ливърпул" src="https://m.netinfo.bg/gong/images/teams/liverpoolfc.png" height="41" width="41">
+                                                                
+                                                                </button>>
+                                    <!-- <div class="menu_drop wrap clearfix">
+                                        <p><a class="gtm-Header-Team" data-pos="title" href="https://liverpool.gong.bg/" title="Ливърпул">Ливърпул</a></p>
+                                        
+                                        <a class="gtm-Header-Team" data-pos="all" href="https://liverpool.gong.bg/"><span>Всичко за Ливърпул</span></a>
+                                    </div> -->
+                                </li>
+                                                
+                                                <li>
+                                                        <button onclick="showArsenal()">
+                                                                <img alt="Арсенал" src="https://m.netinfo.bg/gong/images/teams/arsenalfc.png" height="41" width="41">
+                                                                
+                                                                </button>>
+                                    <!-- <div class="menu_drop wrap clearfix">
+                                        <p><a class="gtm-Header-Team" data-pos="title" href="https://arsenal.gong.bg/" title="Арсенал">Арсенал</a></p>
+                                        
+                                        <a class="gtm-Header-Team" data-pos="all" href="https://arsenal.gong.bg/"><span>Всичко за Арсенал</span></a>
+                                    </div> -->
+                                </li>
+                                                <li>
+                                                        <button onclick="showJuve()">
+                                                                <img alt="Ювентус" src="https://m.netinfo.bg/gong/images/teams/juventus_1.png" height="41" width="41">
+                                                                
+                                                                </button>>
+                                    <!-- <div class="menu_drop wrap clearfix">
+                                        <p><a class="gtm-Header-Team" data-pos="title" href="https://juventus.gong.bg/" title="Ювентус">Ювентус</a></p>
+                                        
+                                        <a class="gtm-Header-Team" data-pos="all" href="https://juventus.gong.bg/"><span>Всичко за Ювентус</span></a>
+                                    </div> -->
+                                </li>
+                                                
+                            </ul>
+                                </div>
+                                <a href="#" id="menu_more" class=""></a>
+                            </div>
+                        </nav>
+                    </div>
+            <!--                                    -->
+            <nav id="menu_wrap">
+                <div class="menu-top-head">
+                <ul class="wrap_s clearfix">
+                    <!-- <li>
+                        <a class="gtm-Header-Main" data-pos="logo" href="https://gong.bg/" title="Gong.bg">
+                                                            <img alt="НАЧАЛО" src="https://m.netinfo.bg/gong/images/logo_10Birthday_white.png">
+                        </a>
+                    </li> -->
+            
+            
+                    
+                        <div class="teams_head">
+                            <a href="https://barcelona.gong.bg/">
+                                <img alt="Барселона" src="https://m.netinfo.bg/gong/images/teams/fcb.png" height="111" width="111">
+                            </a>
+                            <!-- <h2>
+                                <a href="https://barcelona.gong.bg/">Барселона <span>barcelona.gong.bg</span></a>
+                            </h2> -->
+                        </div>
+            
+                  </ul>
+              </div>
+            
+                        <div class="second-section-nav">
+            
+                        
+                                                <div id="dateCarousel" class="first last">
+                                    
+                                    <div class="wrapper">
+                                        <div class="viewport">
+                                            <ul class="wrap_h clearfix">
+                                                
+                                                                                                                                                <li><a href="https://barcelona.gong.bg/" title="Новини" class="dateCarouselSelected ">Новини</a></li>
+                                                        
+                                                    
+                                                
+                                                                                                                                                <li><a href="https://barcelona.gong.bg/multimedia/video" title="Видео" class=" ">Видео</a></li>
+                                                        
+                                                    
+                                                
+                                                                                                                                                <li><a href="https://barcelona.gong.bg/multimedia/gallery" title="Галерии" class=" ">Галерии</a></li>
+                                                        
+                                                    
+                                                
+                                                                                                                                                <li><a href="https://barcelona.gong.bg/multimedia/audio" title="Аудио" class=" ">Аудио</a></li>
+                                                        
+                                                    
+                                                
+                                                                                                                                                <li><a href="https://barcelona.gong.bg/interview" title="Интервю" class=" ">Интервю</a></li>
+                                                        
+                                                    
+                                                
+                                                                                                                                                <li><a href="https://barcelona.gong.bg/comment" title="Коментар" class=" ">Коментар</a></li>
+                                                        
+                                                    
+                                                
+                                                                                                                                                <li><a href="https://barcelona.gong.bg/yellow" title="Жълто" class=" ">Жълто</a></li>
+                                                        
+                                                    
+                                                                                </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                                </div>
+                </nav>
+            
+</div>
+<div style="display:none;" id="JuveDiv">
+        <nav id="team_wrap">
+                <div >
+                        <nav id="team_wrap">
+                            <div class="wrap">
+                                <div id="teams" class="clearfix" style="display: block;">
+                                    <ul class="clearfix">
+                                                        <li>
+                                           <button onclick="showCSKA()" id="cskaButtons">
+                                                <img alt="ЦСКА" src="https://m.netinfo.bg/gong/images/teams/cska.png" height="41" width="41">
+                                            </button>
+                                            <!-- <a class="gtm-Header-Team" data-pos="main" href="https://cska.gong.bg/" title="ЦСКА">
+                                                <img class="ga_team" alt="ЦСКА" src="https://m.netinfo.bg/gong/images/teams/cska_small.png">
+                                                
+                                            </a>  -->
+                                            <!-- <div class="menu_drop wrap clearfix">
+                                                <p><a class="gtm-Header-Team" data-pos="title" href="https://cska.gong.bg/" title="ЦСКА">ЦСКА</a></p>
+                                                
+                                                <a class="gtm-Header-Team" data-pos="all" href="https://cska.gong.bg/"><span>Всичко за ЦСКА</span></a>
+                                            </div> -->
+                                        </li>
+                                                        <li>
+                                                             <button onclick="showLevski()" >
+                                                                    <img alt="Левски" src="https://m.netinfo.bg/gong/images/teams/logo_new100.png" height="41" width="41">
+                                                              </button>
+                                            <!-- <div class="menu_drop wrap clearfix">
+                                                <p><a class="gtm-Header-Team" data-pos="title" href="https://levski.gong.bg/" title="Левски">Левски</a></p>
+                                                
+                                                <a class="gtm-Header-Team" data-pos="all" href="https://levski.gong.bg/"><span>Всичко за Левски</span></a>
+                                            </div> -->
+                                        </li>
+                                                        <li>
+                                                                <button onclick="showLudogorec()" >
+                                                                        <img alt="Лудогорец" src="https://m.netinfo.bg/gong/images/teams/ludogoretz1.png" height="41" width="41">
+                                                                  </button>
+                                            <!-- <div class="menu_drop wrap clearfix">
+                                                <p><a class="gtm-Header-Team" data-pos="title" href="https://ludogorets.gong.bg/" title="Лудогорец">Лудогорец</a></p>
+                                                
+                                                <a class="gtm-Header-Team" data-pos="all" href="https://ludogorets.gong.bg/"><span>Всичко за Лудогорец</span></a>
+                                            </div> -->
+                                        </li>
+                                                
+                                         <li>
+                                                <button onclick="showBarca()">
+                                                        <img alt="Барселона" src="https://m.netinfo.bg/gong/images/teams/fcb.png" height="41" width="41">
+                                                
+                                                </button>>
+                                            <!-- <div class="menu_drop wrap clearfix">
+                                                <p><a class="gtm-Header-Team" data-pos="title" href="https://barcelona.gong.bg/" title="Барселона">Барселона</a></p>
+                                                
+                                                <a class="gtm-Header-Team" data-pos="all" href="https://barcelona.gong.bg/"><span>Всичко за Барселона</span></a>
+                                            </div> -->
+                                        </li>
+                                                        <li>
+                                                                <button onclick="showRealMadrid()">
+                                                                        <img alt="Реал Мадрид" src="https://m.netinfo.bg/gong/images/teams/realmadrid.png" height="41" width="41">
+                                                                        
+                                                                        </button>>
+                                            <!-- <div class="menu_drop wrap clearfix">
+                                                <p><a class="gtm-Header-Team" data-pos="title" href="https://real.gong.bg/" title="Реал Мадрид">Реал Мадрид</a></p>
+                                                
+                                                <a class="gtm-Header-Team" data-pos="all" href="https://real.gong.bg/"><span>Всичко за Реал Мадрид</span></a>
+                                            </div> -->
+                                        </li>
+                                                        <li>
+                                                                <button onclick="showBM()">
+                                                                        <img alt="Байерн" src="https://m.netinfo.bg/gong/images/teams/bayernmunchen.png" height="41" width="41">
+                                                                        
+                                                                        </button>>
+                                            <!-- <div class="menu_drop wrap clearfix">
+                                                <p><a class="gtm-Header-Team" data-pos="title" href="https://bayern.gong.bg/" title="Байерн">Байерн</a></p>
+                                                
+                                                <a class="gtm-Header-Team" data-pos="all" href="https://bayern.gong.bg/"><span>Всичко за Байерн</span></a>
+                                            </div> -->
+                                        </li>
+                                                        <li>
+                                                                <button onclick="showMU()">
+                                                                        <img alt="Манчестър Юнайтед" src="https://m.netinfo.bg/gong/images/teams/manchesterunited.png" height="41" width="41">
+                                                                        
+                                                                        </button>>
+                                            <!-- <div class="menu_drop wrap clearfix">
+                                                <p><a class="gtm-Header-Team" data-pos="title" href="https://manchester.gong.bg/" title="Манчестър Юнайтед">Манчестър Юнайтед</a></p>
+                                                
+                                                <a class="gtm-Header-Team" data-pos="all" href="https://manchester.gong.bg/"><span>Всичко за Манчестър Юнайтед</span></a>
+                                            </div> -->
+                                        </li>
+                                                        <li>
+                                                                <button onclick="showLiv()">
+                                                                        <img alt="Ливърпул" src="https://m.netinfo.bg/gong/images/teams/liverpoolfc.png" height="41" width="41">
+                                                                        
+                                                                        </button>>
+                                            <!-- <div class="menu_drop wrap clearfix">
+                                                <p><a class="gtm-Header-Team" data-pos="title" href="https://liverpool.gong.bg/" title="Ливърпул">Ливърпул</a></p>
+                                                
+                                                <a class="gtm-Header-Team" data-pos="all" href="https://liverpool.gong.bg/"><span>Всичко за Ливърпул</span></a>
+                                            </div> -->
+                                        </li>
+                                                        
+                                                        <li>
+                                                                <button onclick="showArsenal()">
+                                                                        <img alt="Арсенал" src="https://m.netinfo.bg/gong/images/teams/arsenalfc.png" height="41" width="41">
+                                                                        
+                                                                        </button>>
+                                            <!-- <div class="menu_drop wrap clearfix">
+                                                <p><a class="gtm-Header-Team" data-pos="title" href="https://arsenal.gong.bg/" title="Арсенал">Арсенал</a></p>
+                                                
+                                                <a class="gtm-Header-Team" data-pos="all" href="https://arsenal.gong.bg/"><span>Всичко за Арсенал</span></a>
+                                            </div> -->
+                                        </li>
+                                                        <li>
+                                                                <button onclick="showJuve()">
+                                                                        <img alt="Ювентус" src="https://m.netinfo.bg/gong/images/teams/juventus_1.png" height="41" width="41">
+                                                                        
+                                                                        </button>>
+                                            <!-- <div class="menu_drop wrap clearfix">
+                                                <p><a class="gtm-Header-Team" data-pos="title" href="https://juventus.gong.bg/" title="Ювентус">Ювентус</a></p>
+                                                
+                                                <a class="gtm-Header-Team" data-pos="all" href="https://juventus.gong.bg/"><span>Всичко за Ювентус</span></a>
+                                            </div> -->
+                                        </li>
+                                                        
+                                    </ul>
+                                </div>
+                                <a href="#" id="menu_more" class=""></a>
+                            </div>
+                        </nav>
+                    </div>
+            <!--                                    -->
+            <nav id="menu_wrap">
+                <div class="menu-top-head">
+                <ul class="wrap_s clearfix">
+                    <!-- <li>
+                        <a class="gtm-Header-Main" data-pos="logo" href="https://gong.bg/" title="Gong.bg">
+                                                            <img alt="НАЧАЛО" src="https://m.netinfo.bg/gong/images/logo_10Birthday_white.png">
+                        </a>
+                    </li> -->
+            
+            
+                    
+                        <div class="teams_head">
+                            <a href="https://barcelona.gong.bg/">
+                                <img alt="Ювентус" src="https://m.netinfo.bg/gong/images/teams/juventus_1.png" height="111" width="111">
+                            </a>
+                            <!-- <h2>
+                                <a href="https://barcelona.gong.bg/">Барселона <span>barcelona.gong.bg</span></a>
+                            </h2> -->
+                        </div>
+            
+                  </ul>
+              </div>
+            
+                        <div class="second-section-nav">
+            
+                        
+                                                <div id="dateCarousel" class="first last">
+                                    
+                                    <div class="wrapper">
+                                        <div class="viewport">
+                                            <ul class="wrap_h clearfix">
+                                                
+                                                                                                                                                <li><a href="https://barcelona.gong.bg/" title="Новини" class="dateCarouselSelected ">Новини</a></li>
+                                                        
+                                                    
+                                                
+                                                                                                                                                <li><a href="https://barcelona.gong.bg/multimedia/video" title="Видео" class=" ">Видео</a></li>
+                                                        
+                                                    
+                                                
+                                                                                                                                                <li><a href="https://barcelona.gong.bg/multimedia/gallery" title="Галерии" class=" ">Галерии</a></li>
+                                                        
+                                                    
+                                                
+                                                                                                                                                <li><a href="https://barcelona.gong.bg/multimedia/audio" title="Аудио" class=" ">Аудио</a></li>
+                                                        
+                                                    
+                                                
+                                                                                                                                                <li><a href="https://barcelona.gong.bg/interview" title="Интервю" class=" ">Интервю</a></li>
+                                                        
+                                                    
+                                                
+                                                                                                                                                <li><a href="https://barcelona.gong.bg/comment" title="Коментар" class=" ">Коментар</a></li>
+                                                        
+                                                    
+                                                
+                                                                                                                                                <li><a href="https://barcelona.gong.bg/yellow" title="Жълто" class=" ">Жълто</a></li>
+                                                        
+                                                    
+                                                                                </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                                </div>
+                </nav>
+            
+</div>
+<div style="display:none;" id="ArsenalDiv">
+        <nav id="team_wrap">
+                <div >
+                        <nav id="team_wrap">
+                            <div class="wrap">
+                                <div id="teams" class="clearfix" style="display: block;">
+                                        <ul class="clearfix">
+                                                <li>
+                                   <button onclick="showCSKA()" id="cskaButtons">
+                                        <img alt="ЦСКА" src="https://m.netinfo.bg/gong/images/teams/cska.png" height="41" width="41">
+                                    </button>
+                                    <!-- <a class="gtm-Header-Team" data-pos="main" href="https://cska.gong.bg/" title="ЦСКА">
+                                        <img class="ga_team" alt="ЦСКА" src="https://m.netinfo.bg/gong/images/teams/cska_small.png">
+                                        
+                                    </a>  -->
+                                    <!-- <div class="menu_drop wrap clearfix">
+                                        <p><a class="gtm-Header-Team" data-pos="title" href="https://cska.gong.bg/" title="ЦСКА">ЦСКА</a></p>
+                                        
+                                        <a class="gtm-Header-Team" data-pos="all" href="https://cska.gong.bg/"><span>Всичко за ЦСКА</span></a>
+                                    </div> -->
+                                </li>
+                                                <li>
+                                                     <button onclick="showLevski()" >
+                                                            <img alt="Левски" src="https://m.netinfo.bg/gong/images/teams/logo_new100.png" height="41" width="41">
+                                                      </button>
+                                    <!-- <div class="menu_drop wrap clearfix">
+                                        <p><a class="gtm-Header-Team" data-pos="title" href="https://levski.gong.bg/" title="Левски">Левски</a></p>
+                                        
+                                        <a class="gtm-Header-Team" data-pos="all" href="https://levski.gong.bg/"><span>Всичко за Левски</span></a>
+                                    </div> -->
+                                </li>
+                                                <li>
+                                                        <button onclick="showLudogorec()" >
+                                                                <img alt="Лудогорец" src="https://m.netinfo.bg/gong/images/teams/ludogoretz1.png" height="41" width="41">
+                                                          </button>
+                                    <!-- <div class="menu_drop wrap clearfix">
+                                        <p><a class="gtm-Header-Team" data-pos="title" href="https://ludogorets.gong.bg/" title="Лудогорец">Лудогорец</a></p>
+                                        
+                                        <a class="gtm-Header-Team" data-pos="all" href="https://ludogorets.gong.bg/"><span>Всичко за Лудогорец</span></a>
+                                    </div> -->
+                                </li>
+                                        
+                                 <li>
+                                        <button onclick="showBarca()">
+                                                <img alt="Барселона" src="https://m.netinfo.bg/gong/images/teams/fcb.png" height="41" width="41">
+                                        
+                                        </button>>
+                                    <!-- <div class="menu_drop wrap clearfix">
+                                        <p><a class="gtm-Header-Team" data-pos="title" href="https://barcelona.gong.bg/" title="Барселона">Барселона</a></p>
+                                        
+                                        <a class="gtm-Header-Team" data-pos="all" href="https://barcelona.gong.bg/"><span>Всичко за Барселона</span></a>
+                                    </div> -->
+                                </li>
+                                                <li>
+                                                        <button onclick="showRealMadrid()">
+                                                                <img alt="Реал Мадрид" src="https://m.netinfo.bg/gong/images/teams/realmadrid.png" height="41" width="41">
+                                                                
+                                                                </button>>
+                                    <!-- <div class="menu_drop wrap clearfix">
+                                        <p><a class="gtm-Header-Team" data-pos="title" href="https://real.gong.bg/" title="Реал Мадрид">Реал Мадрид</a></p>
+                                        
+                                        <a class="gtm-Header-Team" data-pos="all" href="https://real.gong.bg/"><span>Всичко за Реал Мадрид</span></a>
+                                    </div> -->
+                                </li>
+                                                <li>
+                                                        <button onclick="showBM()">
+                                                                <img alt="Байерн" src="https://m.netinfo.bg/gong/images/teams/bayernmunchen.png" height="41" width="41">
+                                                                
+                                                                </button>>
+                                    <!-- <div class="menu_drop wrap clearfix">
+                                        <p><a class="gtm-Header-Team" data-pos="title" href="https://bayern.gong.bg/" title="Байерн">Байерн</a></p>
+                                        
+                                        <a class="gtm-Header-Team" data-pos="all" href="https://bayern.gong.bg/"><span>Всичко за Байерн</span></a>
+                                    </div> -->
+                                </li>
+                                                <li>
+                                                        <button onclick="showMU()">
+                                                                <img alt="Манчестър Юнайтед" src="https://m.netinfo.bg/gong/images/teams/manchesterunited.png" height="41" width="41">
+                                                                
+                                                                </button>>
+                                    <!-- <div class="menu_drop wrap clearfix">
+                                        <p><a class="gtm-Header-Team" data-pos="title" href="https://manchester.gong.bg/" title="Манчестър Юнайтед">Манчестър Юнайтед</a></p>
+                                        
+                                        <a class="gtm-Header-Team" data-pos="all" href="https://manchester.gong.bg/"><span>Всичко за Манчестър Юнайтед</span></a>
+                                    </div> -->
+                                </li>
+                                                <li>
+                                                        <button onclick="showLiv()">
+                                                                <img alt="Ливърпул" src="https://m.netinfo.bg/gong/images/teams/liverpoolfc.png" height="41" width="41">
+                                                                
+                                                                </button>>
+                                    <!-- <div class="menu_drop wrap clearfix">
+                                        <p><a class="gtm-Header-Team" data-pos="title" href="https://liverpool.gong.bg/" title="Ливърпул">Ливърпул</a></p>
+                                        
+                                        <a class="gtm-Header-Team" data-pos="all" href="https://liverpool.gong.bg/"><span>Всичко за Ливърпул</span></a>
+                                    </div> -->
+                                </li>
+                                                
+                                                <li>
+                                                        <button onclick="showArsenal()">
+                                                                <img alt="Арсенал" src="https://m.netinfo.bg/gong/images/teams/arsenalfc.png" height="41" width="41">
+                                                                
+                                                                </button>>
+                                    <!-- <div class="menu_drop wrap clearfix">
+                                        <p><a class="gtm-Header-Team" data-pos="title" href="https://arsenal.gong.bg/" title="Арсенал">Арсенал</a></p>
+                                        
+                                        <a class="gtm-Header-Team" data-pos="all" href="https://arsenal.gong.bg/"><span>Всичко за Арсенал</span></a>
+                                    </div> -->
+                                </li>
+                                                <li>
+                                                        <button onclick="showJuve()">
+                                                                <img alt="Ювентус" src="https://m.netinfo.bg/gong/images/teams/juventus_1.png" height="41" width="41">
+                                                                
+                                                                </button>>
+                                    <!-- <div class="menu_drop wrap clearfix">
+                                        <p><a class="gtm-Header-Team" data-pos="title" href="https://juventus.gong.bg/" title="Ювентус">Ювентус</a></p>
+                                        
+                                        <a class="gtm-Header-Team" data-pos="all" href="https://juventus.gong.bg/"><span>Всичко за Ювентус</span></a>
+                                    </div> -->
+                                </li>
+                                                
+                            </ul>
+                                </div>
+                                <a href="#" id="menu_more" class=""></a>
+                            </div>
+                        </nav>
+                    </div>
+            <!--                                    -->
+            <nav id="menu_wrap">
+                <div class="menu-top-head">
+                <ul class="wrap_s clearfix">
+                    <!-- <li>
+                        <a class="gtm-Header-Main" data-pos="logo" href="https://gong.bg/" title="Gong.bg">
+                                                            <img alt="НАЧАЛО" src="https://m.netinfo.bg/gong/images/logo_10Birthday_white.png">
+                        </a>
+                    </li> -->
+            
+            
+                    
+                        <div class="teams_head">
+                            <a href="https://barcelona.gong.bg/">
+                                <img alt="Арсенал" src="https://m.netinfo.bg/gong/images/teams/arsenalfc.png" height="111" width="111">
+                            </a>
+                            <!-- <h2>
+                                <a href="https://barcelona.gong.bg/">Барселона <span>barcelona.gong.bg</span></a>
+                            </h2> -->
+                        </div>
+            
+                  </ul>
+              </div>
+            
+                        <div class="second-section-nav">
+            
+                        
+                                                <div id="dateCarousel" class="first last">
+                                    
+                                    <div class="wrapper">
+                                        <div class="viewport">
+                                            <ul class="wrap_h clearfix">
+                                                
+                                                                                                                                                <li><a href="https://barcelona.gong.bg/" title="Новини" class="dateCarouselSelected ">Новини</a></li>
+                                                        
+                                                    
+                                                
+                                                                                                                                                <li><a href="https://barcelona.gong.bg/multimedia/video" title="Видео" class=" ">Видео</a></li>
+                                                        
+                                                    
+                                                
+                                                                                                                                                <li><a href="https://barcelona.gong.bg/multimedia/gallery" title="Галерии" class=" ">Галерии</a></li>
+                                                        
+                                                    
+                                                
+                                                                                                                                                <li><a href="https://barcelona.gong.bg/multimedia/audio" title="Аудио" class=" ">Аудио</a></li>
+                                                        
+                                                    
+                                                
+                                                                                                                                                <li><a href="https://barcelona.gong.bg/interview" title="Интервю" class=" ">Интервю</a></li>
+                                                        
+                                                    
+                                                
+                                                                                                                                                <li><a href="https://barcelona.gong.bg/comment" title="Коментар" class=" ">Коментар</a></li>
+                                                        
+                                                    
+                                                
+                                                                                                                                                <li><a href="https://barcelona.gong.bg/yellow" title="Жълто" class=" ">Жълто</a></li>
+                                                        
+                                                    
+                                                                                </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                                </div>
+                </nav>
+            
+</div>
+<div style="display:none;" id="LudogorecDiv">
+        <nav id="team_wrap">
+                <div >
+                        <nav id="team_wrap">
+                            <div class="wrap">
+                                <div id="teams" class="clearfix" style="display: block;">
+                                        <ul class="clearfix">
+                                                <li>
+                                   <button onclick="showCSKA()" id="cskaButtons">
+                                        <img alt="ЦСКА" src="https://m.netinfo.bg/gong/images/teams/cska.png" height="41" width="41">
+                                    </button>
+                                    <!-- <a class="gtm-Header-Team" data-pos="main" href="https://cska.gong.bg/" title="ЦСКА">
+                                        <img class="ga_team" alt="ЦСКА" src="https://m.netinfo.bg/gong/images/teams/cska_small.png">
+                                        
+                                    </a>  -->
+                                    <!-- <div class="menu_drop wrap clearfix">
+                                        <p><a class="gtm-Header-Team" data-pos="title" href="https://cska.gong.bg/" title="ЦСКА">ЦСКА</a></p>
+                                        
+                                        <a class="gtm-Header-Team" data-pos="all" href="https://cska.gong.bg/"><span>Всичко за ЦСКА</span></a>
+                                    </div> -->
+                                </li>
+                                                <li>
+                                                     <button onclick="showLevski()" >
+                                                            <img alt="Левски" src="https://m.netinfo.bg/gong/images/teams/logo_new100.png" height="41" width="41">
+                                                      </button>
+                                    <!-- <div class="menu_drop wrap clearfix">
+                                        <p><a class="gtm-Header-Team" data-pos="title" href="https://levski.gong.bg/" title="Левски">Левски</a></p>
+                                        
+                                        <a class="gtm-Header-Team" data-pos="all" href="https://levski.gong.bg/"><span>Всичко за Левски</span></a>
+                                    </div> -->
+                                </li>
+                                                <li>
+                                                        <button onclick="showLudogorec()" >
+                                                                <img alt="Лудогорец" src="https://m.netinfo.bg/gong/images/teams/ludogoretz1.png" height="41" width="41">
+                                                          </button>
+                                    <!-- <div class="menu_drop wrap clearfix">
+                                        <p><a class="gtm-Header-Team" data-pos="title" href="https://ludogorets.gong.bg/" title="Лудогорец">Лудогорец</a></p>
+                                        
+                                        <a class="gtm-Header-Team" data-pos="all" href="https://ludogorets.gong.bg/"><span>Всичко за Лудогорец</span></a>
+                                    </div> -->
+                                </li>
+                                        
+                                 <li>
+                                        <button onclick="showBarca()">
+                                                <img alt="Барселона" src="https://m.netinfo.bg/gong/images/teams/fcb.png" height="41" width="41">
+                                        
+                                        </button>>
+                                    <!-- <div class="menu_drop wrap clearfix">
+                                        <p><a class="gtm-Header-Team" data-pos="title" href="https://barcelona.gong.bg/" title="Барселона">Барселона</a></p>
+                                        
+                                        <a class="gtm-Header-Team" data-pos="all" href="https://barcelona.gong.bg/"><span>Всичко за Барселона</span></a>
+                                    </div> -->
+                                </li>
+                                                <li>
+                                                        <button onclick="showRealMadrid()">
+                                                                <img alt="Реал Мадрид" src="https://m.netinfo.bg/gong/images/teams/realmadrid.png" height="41" width="41">
+                                                                
+                                                                </button>>
+                                    <!-- <div class="menu_drop wrap clearfix">
+                                        <p><a class="gtm-Header-Team" data-pos="title" href="https://real.gong.bg/" title="Реал Мадрид">Реал Мадрид</a></p>
+                                        
+                                        <a class="gtm-Header-Team" data-pos="all" href="https://real.gong.bg/"><span>Всичко за Реал Мадрид</span></a>
+                                    </div> -->
+                                </li>
+                                                <li>
+                                                        <button onclick="showBM()">
+                                                                <img alt="Байерн" src="https://m.netinfo.bg/gong/images/teams/bayernmunchen.png" height="41" width="41">
+                                                                
+                                                                </button>>
+                                    <!-- <div class="menu_drop wrap clearfix">
+                                        <p><a class="gtm-Header-Team" data-pos="title" href="https://bayern.gong.bg/" title="Байерн">Байерн</a></p>
+                                        
+                                        <a class="gtm-Header-Team" data-pos="all" href="https://bayern.gong.bg/"><span>Всичко за Байерн</span></a>
+                                    </div> -->
+                                </li>
+                                                <li>
+                                                        <button onclick="showMU()">
+                                                                <img alt="Манчестър Юнайтед" src="https://m.netinfo.bg/gong/images/teams/manchesterunited.png" height="41" width="41">
+                                                                
+                                                                </button>>
+                                    <!-- <div class="menu_drop wrap clearfix">
+                                        <p><a class="gtm-Header-Team" data-pos="title" href="https://manchester.gong.bg/" title="Манчестър Юнайтед">Манчестър Юнайтед</a></p>
+                                        
+                                        <a class="gtm-Header-Team" data-pos="all" href="https://manchester.gong.bg/"><span>Всичко за Манчестър Юнайтед</span></a>
+                                    </div> -->
+                                </li>
+                                                <li>
+                                                        <button onclick="showLiv()">
+                                                                <img alt="Ливърпул" src="https://m.netinfo.bg/gong/images/teams/liverpoolfc.png" height="41" width="41">
+                                                                
+                                                                </button>>
+                                    <!-- <div class="menu_drop wrap clearfix">
+                                        <p><a class="gtm-Header-Team" data-pos="title" href="https://liverpool.gong.bg/" title="Ливърпул">Ливърпул</a></p>
+                                        
+                                        <a class="gtm-Header-Team" data-pos="all" href="https://liverpool.gong.bg/"><span>Всичко за Ливърпул</span></a>
+                                    </div> -->
+                                </li>
+                                                
+                                                <li>
+                                                        <button onclick="showArsenal()">
+                                                                <img alt="Арсенал" src="https://m.netinfo.bg/gong/images/teams/arsenalfc.png" height="41" width="41">
+                                                                
+                                                                </button>>
+                                    <!-- <div class="menu_drop wrap clearfix">
+                                        <p><a class="gtm-Header-Team" data-pos="title" href="https://arsenal.gong.bg/" title="Арсенал">Арсенал</a></p>
+                                        
+                                        <a class="gtm-Header-Team" data-pos="all" href="https://arsenal.gong.bg/"><span>Всичко за Арсенал</span></a>
+                                    </div> -->
+                                </li>
+                                                <li>
+                                                        <button onclick="showJuve()">
+                                                                <img alt="Ювентус" src="https://m.netinfo.bg/gong/images/teams/juventus_1.png" height="41" width="41">
+                                                                
+                                                                </button>>
+                                    <!-- <div class="menu_drop wrap clearfix">
+                                        <p><a class="gtm-Header-Team" data-pos="title" href="https://juventus.gong.bg/" title="Ювентус">Ювентус</a></p>
+                                        
+                                        <a class="gtm-Header-Team" data-pos="all" href="https://juventus.gong.bg/"><span>Всичко за Ювентус</span></a>
+                                    </div> -->
+                                </li>
+                                                
+                            </ul>
+                                </div>
+                                <a href="#" id="menu_more" class=""></a>
+                            </div>
+                        </nav>
+                    </div>
+            <!--                                    -->
+            <nav id="menu_wrap">
+                <div class="menu-top-head">
+                <ul class="wrap_s clearfix">
+                    <!-- <li>
+                        <a class="gtm-Header-Main" data-pos="logo" href="https://gong.bg/" title="Gong.bg">
+                                                            <img alt="НАЧАЛО" src="https://m.netinfo.bg/gong/images/logo_10Birthday_white.png">
+                        </a>
+                    </li> -->
+            
+            
+                    
+                        <div class="teams_head">
+                            <a href="https://barcelona.gong.bg/">
+                                <img alt="Лудогорец" src="https://m.netinfo.bg/gong/images/teams/ludogoretz1.png" height="111" width="111">
+                            </a>
+                            <!-- <h2>
+                                <a href="https://barcelona.gong.bg/">Барселона <span>barcelona.gong.bg</span></a>
+                            </h2> -->
+                        </div>
+            
+                  </ul>
+              </div>
+            
+                        <div class="second-section-nav">
+            
+                        
+                                                <div id="dateCarousel" class="first last">
+                                    
+                                    <div class="wrapper">
+                                        <div class="viewport">
+                                            <ul class="wrap_h clearfix">
+                                                
+                                                                                                                                                <li><a href="https://barcelona.gong.bg/" title="Новини" class="dateCarouselSelected ">Новини</a></li>
+                                                        
+                                                    
+                                                
+                                                                                                                                                <li><a href="https://barcelona.gong.bg/multimedia/video" title="Видео" class=" ">Видео</a></li>
+                                                        
+                                                    
+                                                
+                                                                                                                                                <li><a href="https://barcelona.gong.bg/multimedia/gallery" title="Галерии" class=" ">Галерии</a></li>
+                                                        
+                                                    
+                                                
+                                                                                                                                                <li><a href="https://barcelona.gong.bg/multimedia/audio" title="Аудио" class=" ">Аудио</a></li>
+                                                        
+                                                    
+                                                
+                                                                                                                                                <li><a href="https://barcelona.gong.bg/interview" title="Интервю" class=" ">Интервю</a></li>
+                                                        
+                                                    
+                                                
+                                                                                                                                                <li><a href="https://barcelona.gong.bg/comment" title="Коментар" class=" ">Коментар</a></li>
+                                                        
+                                                    
+                                                
+                                                                                                                                                <li><a href="https://barcelona.gong.bg/yellow" title="Жълто" class=" ">Жълто</a></li>
+                                                        
+                                                    
+                                                                                </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                                </div>
+                </nav>
+            
+</div>
+<div style="display:none;" id="LivDiv">
+        <nav id="team_wrap">
+                <div >
+                        <nav id="team_wrap">
+                            <div class="wrap">
+                                <div id="teams" class="clearfix" style="display: block;">
+                                        <ul class="clearfix">
+                                                <li>
+                                   <button onclick="showCSKA()" id="cskaButtons">
+                                        <img alt="ЦСКА" src="https://m.netinfo.bg/gong/images/teams/cska.png" height="41" width="41">
+                                    </button>
+                                    <!-- <a class="gtm-Header-Team" data-pos="main" href="https://cska.gong.bg/" title="ЦСКА">
+                                        <img class="ga_team" alt="ЦСКА" src="https://m.netinfo.bg/gong/images/teams/cska_small.png">
+                                        
+                                    </a>  -->
+                                    <!-- <div class="menu_drop wrap clearfix">
+                                        <p><a class="gtm-Header-Team" data-pos="title" href="https://cska.gong.bg/" title="ЦСКА">ЦСКА</a></p>
+                                        
+                                        <a class="gtm-Header-Team" data-pos="all" href="https://cska.gong.bg/"><span>Всичко за ЦСКА</span></a>
+                                    </div> -->
+                                </li>
+                                                <li>
+                                                     <button onclick="showLevski()" >
+                                                            <img alt="Левски" src="https://m.netinfo.bg/gong/images/teams/logo_new100.png" height="41" width="41">
+                                                      </button>
+                                    <!-- <div class="menu_drop wrap clearfix">
+                                        <p><a class="gtm-Header-Team" data-pos="title" href="https://levski.gong.bg/" title="Левски">Левски</a></p>
+                                        
+                                        <a class="gtm-Header-Team" data-pos="all" href="https://levski.gong.bg/"><span>Всичко за Левски</span></a>
+                                    </div> -->
+                                </li>
+                                                <li>
+                                                        <button onclick="showLudogorec()" >
+                                                                <img alt="Лудогорец" src="https://m.netinfo.bg/gong/images/teams/ludogoretz1.png" height="41" width="41">
+                                                          </button>
+                                    <!-- <div class="menu_drop wrap clearfix">
+                                        <p><a class="gtm-Header-Team" data-pos="title" href="https://ludogorets.gong.bg/" title="Лудогорец">Лудогорец</a></p>
+                                        
+                                        <a class="gtm-Header-Team" data-pos="all" href="https://ludogorets.gong.bg/"><span>Всичко за Лудогорец</span></a>
+                                    </div> -->
+                                </li>
+                                        
+                                 <li>
+                                        <button onclick="showBarca()">
+                                                <img alt="Барселона" src="https://m.netinfo.bg/gong/images/teams/fcb.png" height="41" width="41">
+                                        
+                                        </button>>
+                                    <!-- <div class="menu_drop wrap clearfix">
+                                        <p><a class="gtm-Header-Team" data-pos="title" href="https://barcelona.gong.bg/" title="Барселона">Барселона</a></p>
+                                        
+                                        <a class="gtm-Header-Team" data-pos="all" href="https://barcelona.gong.bg/"><span>Всичко за Барселона</span></a>
+                                    </div> -->
+                                </li>
+                                                <li>
+                                                        <button onclick="showRealMadrid()">
+                                                                <img alt="Реал Мадрид" src="https://m.netinfo.bg/gong/images/teams/realmadrid.png" height="41" width="41">
+                                                                
+                                                                </button>>
+                                    <!-- <div class="menu_drop wrap clearfix">
+                                        <p><a class="gtm-Header-Team" data-pos="title" href="https://real.gong.bg/" title="Реал Мадрид">Реал Мадрид</a></p>
+                                        
+                                        <a class="gtm-Header-Team" data-pos="all" href="https://real.gong.bg/"><span>Всичко за Реал Мадрид</span></a>
+                                    </div> -->
+                                </li>
+                                                <li>
+                                                        <button onclick="showBM()">
+                                                                <img alt="Байерн" src="https://m.netinfo.bg/gong/images/teams/bayernmunchen.png" height="41" width="41">
+                                                                
+                                                                </button>>
+                                    <!-- <div class="menu_drop wrap clearfix">
+                                        <p><a class="gtm-Header-Team" data-pos="title" href="https://bayern.gong.bg/" title="Байерн">Байерн</a></p>
+                                        
+                                        <a class="gtm-Header-Team" data-pos="all" href="https://bayern.gong.bg/"><span>Всичко за Байерн</span></a>
+                                    </div> -->
+                                </li>
+                                                <li>
+                                                        <button onclick="showMU()">
+                                                                <img alt="Манчестър Юнайтед" src="https://m.netinfo.bg/gong/images/teams/manchesterunited.png" height="41" width="41">
+                                                                
+                                                                </button>>
+                                    <!-- <div class="menu_drop wrap clearfix">
+                                        <p><a class="gtm-Header-Team" data-pos="title" href="https://manchester.gong.bg/" title="Манчестър Юнайтед">Манчестър Юнайтед</a></p>
+                                        
+                                        <a class="gtm-Header-Team" data-pos="all" href="https://manchester.gong.bg/"><span>Всичко за Манчестър Юнайтед</span></a>
+                                    </div> -->
+                                </li>
+                                                <li>
+                                                        <button onclick="showLiv()">
+                                                                <img alt="Ливърпул" src="https://m.netinfo.bg/gong/images/teams/liverpoolfc.png" height="41" width="41">
+                                                                
+                                                                </button>>
+                                    <!-- <div class="menu_drop wrap clearfix">
+                                        <p><a class="gtm-Header-Team" data-pos="title" href="https://liverpool.gong.bg/" title="Ливърпул">Ливърпул</a></p>
+                                        
+                                        <a class="gtm-Header-Team" data-pos="all" href="https://liverpool.gong.bg/"><span>Всичко за Ливърпул</span></a>
+                                    </div> -->
+                                </li>
+                                                
+                                                <li>
+                                                        <button onclick="showArsenal()">
+                                                                <img alt="Арсенал" src="https://m.netinfo.bg/gong/images/teams/arsenalfc.png" height="41" width="41">
+                                                                
+                                                                </button>>
+                                    <!-- <div class="menu_drop wrap clearfix">
+                                        <p><a class="gtm-Header-Team" data-pos="title" href="https://arsenal.gong.bg/" title="Арсенал">Арсенал</a></p>
+                                        
+                                        <a class="gtm-Header-Team" data-pos="all" href="https://arsenal.gong.bg/"><span>Всичко за Арсенал</span></a>
+                                    </div> -->
+                                </li>
+                                                <li>
+                                                        <button onclick="showJuve()">
+                                                                <img alt="Ювентус" src="https://m.netinfo.bg/gong/images/teams/juventus_1.png" height="41" width="41">
+                                                                
+                                                                </button>>
+                                    <!-- <div class="menu_drop wrap clearfix">
+                                        <p><a class="gtm-Header-Team" data-pos="title" href="https://juventus.gong.bg/" title="Ювентус">Ювентус</a></p>
+                                        
+                                        <a class="gtm-Header-Team" data-pos="all" href="https://juventus.gong.bg/"><span>Всичко за Ювентус</span></a>
+                                    </div> -->
+                                </li>
+                                                
+                            </ul>
+                                </div>
+                                <a href="#" id="menu_more" class=""></a>
+                            </div>
+                        </nav>
+                    </div>
+            <!--                                    -->
+            <nav id="menu_wrap">
+                <div class="menu-top-head">
+                <ul class="wrap_s clearfix">
+                    <!-- <li>
+                        <a class="gtm-Header-Main" data-pos="logo" href="https://gong.bg/" title="Gong.bg">
+                                                            <img alt="НАЧАЛО" src="https://m.netinfo.bg/gong/images/logo_10Birthday_white.png">
+                        </a>
+                    </li> -->
+            
+            
+                    
+                        <div class="teams_head">
+                            <a href="https://barcelona.gong.bg/">
+                                <img alt="Ливърпул" src="https://m.netinfo.bg/gong/images/teams/liverpoolfc.png" height="111" width="111">
+                            </a>
+                            <!-- <h2>
+                                <a href="https://barcelona.gong.bg/">Барселона <span>barcelona.gong.bg</span></a>
+                            </h2> -->
+                        </div>
+            
+                  </ul>
+              </div>
+            
+                        <div class="second-section-nav">
+            
+                        
+                                                <div id="dateCarousel" class="first last">
+                                    
+                                    <div class="wrapper">
+                                        <div class="viewport">
+                                            <ul class="wrap_h clearfix">
+                                                
+                                                                                                                                                <li><a href="https://barcelona.gong.bg/" title="Новини" class="dateCarouselSelected ">Новини</a></li>
+                                                        
+                                                    
+                                                
+                                                                                                                                                <li><a href="https://barcelona.gong.bg/multimedia/video" title="Видео" class=" ">Видео</a></li>
+                                                        
+                                                    
+                                                
+                                                                                                                                                <li><a href="https://barcelona.gong.bg/multimedia/gallery" title="Галерии" class=" ">Галерии</a></li>
+                                                        
+                                                    
+                                                
+                                                                                                                                                <li><a href="https://barcelona.gong.bg/multimedia/audio" title="Аудио" class=" ">Аудио</a></li>
+                                                        
+                                                    
+                                                
+                                                                                                                                                <li><a href="https://barcelona.gong.bg/interview" title="Интервю" class=" ">Интервю</a></li>
+                                                        
+                                                    
+                                                
+                                                                                                                                                <li><a href="https://barcelona.gong.bg/comment" title="Коментар" class=" ">Коментар</a></li>
+                                                        
+                                                    
+                                                
+                                                                                                                                                <li><a href="https://barcelona.gong.bg/yellow" title="Жълто" class=" ">Жълто</a></li>
+                                                        
+                                                    
+                                                                                </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                                </div>
+                </nav>
+            
+</div>
+<div style="display:none;" id="MUDiv">
+        <nav id="team_wrap">
+                <div >
+                        <nav id="team_wrap">
+                            <div class="wrap">
+                                <div id="teams" class="clearfix" style="display: block;">
+                                        <ul class="clearfix">
+                                                <li>
+                                   <button onclick="showCSKA()" id="cskaButtons">
+                                        <img alt="ЦСКА" src="https://m.netinfo.bg/gong/images/teams/cska.png" height="41" width="41">
+                                    </button>
+                                    <!-- <a class="gtm-Header-Team" data-pos="main" href="https://cska.gong.bg/" title="ЦСКА">
+                                        <img class="ga_team" alt="ЦСКА" src="https://m.netinfo.bg/gong/images/teams/cska_small.png">
+                                        
+                                    </a>  -->
+                                    <!-- <div class="menu_drop wrap clearfix">
+                                        <p><a class="gtm-Header-Team" data-pos="title" href="https://cska.gong.bg/" title="ЦСКА">ЦСКА</a></p>
+                                        
+                                        <a class="gtm-Header-Team" data-pos="all" href="https://cska.gong.bg/"><span>Всичко за ЦСКА</span></a>
+                                    </div> -->
+                                </li>
+                                                <li>
+                                                     <button onclick="showLevski()" >
+                                                            <img alt="Левски" src="https://m.netinfo.bg/gong/images/teams/logo_new100.png" height="41" width="41">
+                                                      </button>
+                                    <!-- <div class="menu_drop wrap clearfix">
+                                        <p><a class="gtm-Header-Team" data-pos="title" href="https://levski.gong.bg/" title="Левски">Левски</a></p>
+                                        
+                                        <a class="gtm-Header-Team" data-pos="all" href="https://levski.gong.bg/"><span>Всичко за Левски</span></a>
+                                    </div> -->
+                                </li>
+                                                <li>
+                                                        <button onclick="showLudogorec()" >
+                                                                <img alt="Лудогорец" src="https://m.netinfo.bg/gong/images/teams/ludogoretz1.png" height="41" width="41">
+                                                          </button>
+                                    <!-- <div class="menu_drop wrap clearfix">
+                                        <p><a class="gtm-Header-Team" data-pos="title" href="https://ludogorets.gong.bg/" title="Лудогорец">Лудогорец</a></p>
+                                        
+                                        <a class="gtm-Header-Team" data-pos="all" href="https://ludogorets.gong.bg/"><span>Всичко за Лудогорец</span></a>
+                                    </div> -->
+                                </li>
+                                        
+                                 <li>
+                                        <button onclick="showBarca()">
+                                                <img alt="Барселона" src="https://m.netinfo.bg/gong/images/teams/fcb.png" height="41" width="41">
+                                        
+                                        </button>>
+                                    <!-- <div class="menu_drop wrap clearfix">
+                                        <p><a class="gtm-Header-Team" data-pos="title" href="https://barcelona.gong.bg/" title="Барселона">Барселона</a></p>
+                                        
+                                        <a class="gtm-Header-Team" data-pos="all" href="https://barcelona.gong.bg/"><span>Всичко за Барселона</span></a>
+                                    </div> -->
+                                </li>
+                                                <li>
+                                                        <button onclick="showRealMadrid()">
+                                                                <img alt="Реал Мадрид" src="https://m.netinfo.bg/gong/images/teams/realmadrid.png" height="41" width="41">
+                                                                
+                                                                </button>>
+                                    <!-- <div class="menu_drop wrap clearfix">
+                                        <p><a class="gtm-Header-Team" data-pos="title" href="https://real.gong.bg/" title="Реал Мадрид">Реал Мадрид</a></p>
+                                        
+                                        <a class="gtm-Header-Team" data-pos="all" href="https://real.gong.bg/"><span>Всичко за Реал Мадрид</span></a>
+                                    </div> -->
+                                </li>
+                                                <li>
+                                                        <button onclick="showBM()">
+                                                                <img alt="Байерн" src="https://m.netinfo.bg/gong/images/teams/bayernmunchen.png" height="41" width="41">
+                                                                
+                                                                </button>>
+                                    <!-- <div class="menu_drop wrap clearfix">
+                                        <p><a class="gtm-Header-Team" data-pos="title" href="https://bayern.gong.bg/" title="Байерн">Байерн</a></p>
+                                        
+                                        <a class="gtm-Header-Team" data-pos="all" href="https://bayern.gong.bg/"><span>Всичко за Байерн</span></a>
+                                    </div> -->
+                                </li>
+                                                <li>
+                                                        <button onclick="showMU()">
+                                                                <img alt="Манчестър Юнайтед" src="https://m.netinfo.bg/gong/images/teams/manchesterunited.png" height="41" width="41">
+                                                                
+                                                                </button>>
+                                    <!-- <div class="menu_drop wrap clearfix">
+                                        <p><a class="gtm-Header-Team" data-pos="title" href="https://manchester.gong.bg/" title="Манчестър Юнайтед">Манчестър Юнайтед</a></p>
+                                        
+                                        <a class="gtm-Header-Team" data-pos="all" href="https://manchester.gong.bg/"><span>Всичко за Манчестър Юнайтед</span></a>
+                                    </div> -->
+                                </li>
+                                                <li>
+                                                        <button onclick="showLiv()">
+                                                                <img alt="Ливърпул" src="https://m.netinfo.bg/gong/images/teams/liverpoolfc.png" height="41" width="41">
+                                                                
+                                                                </button>>
+                                    <!-- <div class="menu_drop wrap clearfix">
+                                        <p><a class="gtm-Header-Team" data-pos="title" href="https://liverpool.gong.bg/" title="Ливърпул">Ливърпул</a></p>
+                                        
+                                        <a class="gtm-Header-Team" data-pos="all" href="https://liverpool.gong.bg/"><span>Всичко за Ливърпул</span></a>
+                                    </div> -->
+                                </li>
+                                                
+                                                <li>
+                                                        <button onclick="showArsenal()">
+                                                                <img alt="Арсенал" src="https://m.netinfo.bg/gong/images/teams/arsenalfc.png" height="41" width="41">
+                                                                
+                                                                </button>>
+                                    <!-- <div class="menu_drop wrap clearfix">
+                                        <p><a class="gtm-Header-Team" data-pos="title" href="https://arsenal.gong.bg/" title="Арсенал">Арсенал</a></p>
+                                        
+                                        <a class="gtm-Header-Team" data-pos="all" href="https://arsenal.gong.bg/"><span>Всичко за Арсенал</span></a>
+                                    </div> -->
+                                </li>
+                                                <li>
+                                                        <button onclick="showJuve()">
+                                                                <img alt="Ювентус" src="https://m.netinfo.bg/gong/images/teams/juventus_1.png" height="41" width="41">
+                                                                
+                                                                </button>>
+                                    <!-- <div class="menu_drop wrap clearfix">
+                                        <p><a class="gtm-Header-Team" data-pos="title" href="https://juventus.gong.bg/" title="Ювентус">Ювентус</a></p>
+                                        
+                                        <a class="gtm-Header-Team" data-pos="all" href="https://juventus.gong.bg/"><span>Всичко за Ювентус</span></a>
+                                    </div> -->
+                                </li>
+                                                
+                            </ul>
+                                </div>
+                                <a href="#" id="menu_more" class=""></a>
+                            </div>
+                        </nav>
+                    </div>
+            <!--                                    -->
+            <nav id="menu_wrap">
+                <div class="menu-top-head">
+                <ul class="wrap_s clearfix">
+                    <!-- <li>
+                        <a class="gtm-Header-Main" data-pos="logo" href="https://gong.bg/" title="Gong.bg">
+                                                            <img alt="НАЧАЛО" src="https://m.netinfo.bg/gong/images/logo_10Birthday_white.png">
+                        </a>
+                    </li> -->
+            
+            
+                    
+                        <div class="teams_head">
+                            <a href="https://barcelona.gong.bg/">
+                                <img alt="Манчестър Юнайтед" src="https://m.netinfo.bg/gong/images/teams/manchesterunited.png" height="111" width="111">
+                            </a>
+                            <!-- <h2>
+                                <a href="https://barcelona.gong.bg/">Барселона <span>barcelona.gong.bg</span></a>
+                            </h2> -->
+                        </div>
+            
+                  </ul>
+              </div>
+            
+                        <div class="second-section-nav">
+            
+                        
+                                                <div id="dateCarousel" class="first last">
+                                    
+                                    <div class="wrapper">
+                                        <div class="viewport">
+                                            <ul class="wrap_h clearfix">
+                                                
+                                                                                                                                                <li><a href="https://barcelona.gong.bg/" title="Новини" class="dateCarouselSelected ">Новини</a></li>
+                                                        
+                                                    
+                                                
+                                                                                                                                                <li><a href="https://barcelona.gong.bg/multimedia/video" title="Видео" class=" ">Видео</a></li>
+                                                        
+                                                    
+                                                
+                                                                                                                                                <li><a href="https://barcelona.gong.bg/multimedia/gallery" title="Галерии" class=" ">Галерии</a></li>
+                                                        
+                                                    
+                                                
+                                                                                                                                                <li><a href="https://barcelona.gong.bg/multimedia/audio" title="Аудио" class=" ">Аудио</a></li>
+                                                        
+                                                    
+                                                
+                                                                                                                                                <li><a href="https://barcelona.gong.bg/interview" title="Интервю" class=" ">Интервю</a></li>
+                                                        
+                                                    
+                                                
+                                                                                                                                                <li><a href="https://barcelona.gong.bg/comment" title="Коментар" class=" ">Коментар</a></li>
+                                                        
+                                                    
+                                                
+                                                                                                                                                <li><a href="https://barcelona.gong.bg/yellow" title="Жълто" class=" ">Жълто</a></li>
+                                                        
+                                                    
+                                                                                </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                                </div>
+                </nav>
+            
+</div>
+<div style="display:none;" id="BMDiv">
+        <nav id="team_wrap">
+                <div >
+                        <nav id="team_wrap">
+                            <div class="wrap">
+                                <div id="teams" class="clearfix" style="display: block;">
+                                        <ul class="clearfix">
+                                                <li>
+                                   <button onclick="showCSKA()" id="cskaButtons">
+                                        <img alt="ЦСКА" src="https://m.netinfo.bg/gong/images/teams/cska.png" height="41" width="41">
+                                    </button>
+                                    <!-- <a class="gtm-Header-Team" data-pos="main" href="https://cska.gong.bg/" title="ЦСКА">
+                                        <img class="ga_team" alt="ЦСКА" src="https://m.netinfo.bg/gong/images/teams/cska_small.png">
+                                        
+                                    </a>  -->
+                                    <!-- <div class="menu_drop wrap clearfix">
+                                        <p><a class="gtm-Header-Team" data-pos="title" href="https://cska.gong.bg/" title="ЦСКА">ЦСКА</a></p>
+                                        
+                                        <a class="gtm-Header-Team" data-pos="all" href="https://cska.gong.bg/"><span>Всичко за ЦСКА</span></a>
+                                    </div> -->
+                                </li>
+                                                <li>
+                                                     <button onclick="showLevski()" >
+                                                            <img alt="Левски" src="https://m.netinfo.bg/gong/images/teams/logo_new100.png" height="41" width="41">
+                                                      </button>
+                                    <!-- <div class="menu_drop wrap clearfix">
+                                        <p><a class="gtm-Header-Team" data-pos="title" href="https://levski.gong.bg/" title="Левски">Левски</a></p>
+                                        
+                                        <a class="gtm-Header-Team" data-pos="all" href="https://levski.gong.bg/"><span>Всичко за Левски</span></a>
+                                    </div> -->
+                                </li>
+                                                <li>
+                                                        <button onclick="showLudogorec()" >
+                                                                <img alt="Лудогорец" src="https://m.netinfo.bg/gong/images/teams/ludogoretz1.png" height="41" width="41">
+                                                          </button>
+                                    <!-- <div class="menu_drop wrap clearfix">
+                                        <p><a class="gtm-Header-Team" data-pos="title" href="https://ludogorets.gong.bg/" title="Лудогорец">Лудогорец</a></p>
+                                        
+                                        <a class="gtm-Header-Team" data-pos="all" href="https://ludogorets.gong.bg/"><span>Всичко за Лудогорец</span></a>
+                                    </div> -->
+                                </li>
+                                        
+                                 <li>
+                                        <button onclick="showBarca()">
+                                                <img alt="Барселона" src="https://m.netinfo.bg/gong/images/teams/fcb.png" height="41" width="41">
+                                        
+                                        </button>>
+                                    <!-- <div class="menu_drop wrap clearfix">
+                                        <p><a class="gtm-Header-Team" data-pos="title" href="https://barcelona.gong.bg/" title="Барселона">Барселона</a></p>
+                                        
+                                        <a class="gtm-Header-Team" data-pos="all" href="https://barcelona.gong.bg/"><span>Всичко за Барселона</span></a>
+                                    </div> -->
+                                </li>
+                                                <li>
+                                                        <button onclick="showRealMadrid()">
+                                                                <img alt="Реал Мадрид" src="https://m.netinfo.bg/gong/images/teams/realmadrid.png" height="41" width="41">
+                                                                
+                                                                </button>>
+                                    <!-- <div class="menu_drop wrap clearfix">
+                                        <p><a class="gtm-Header-Team" data-pos="title" href="https://real.gong.bg/" title="Реал Мадрид">Реал Мадрид</a></p>
+                                        
+                                        <a class="gtm-Header-Team" data-pos="all" href="https://real.gong.bg/"><span>Всичко за Реал Мадрид</span></a>
+                                    </div> -->
+                                </li>
+                                                <li>
+                                                        <button onclick="showBM()">
+                                                                <img alt="Байерн" src="https://m.netinfo.bg/gong/images/teams/bayernmunchen.png" height="41" width="41">
+                                                                
+                                                                </button>>
+                                    <!-- <div class="menu_drop wrap clearfix">
+                                        <p><a class="gtm-Header-Team" data-pos="title" href="https://bayern.gong.bg/" title="Байерн">Байерн</a></p>
+                                        
+                                        <a class="gtm-Header-Team" data-pos="all" href="https://bayern.gong.bg/"><span>Всичко за Байерн</span></a>
+                                    </div> -->
+                                </li>
+                                                <li>
+                                                        <button onclick="showMU()">
+                                                                <img alt="Манчестър Юнайтед" src="https://m.netinfo.bg/gong/images/teams/manchesterunited.png" height="41" width="41">
+                                                                
+                                                                </button>>
+                                    <!-- <div class="menu_drop wrap clearfix">
+                                        <p><a class="gtm-Header-Team" data-pos="title" href="https://manchester.gong.bg/" title="Манчестър Юнайтед">Манчестър Юнайтед</a></p>
+                                        
+                                        <a class="gtm-Header-Team" data-pos="all" href="https://manchester.gong.bg/"><span>Всичко за Манчестър Юнайтед</span></a>
+                                    </div> -->
+                                </li>
+                                                <li>
+                                                        <button onclick="showLiv()">
+                                                                <img alt="Ливърпул" src="https://m.netinfo.bg/gong/images/teams/liverpoolfc.png" height="41" width="41">
+                                                                
+                                                                </button>>
+                                    <!-- <div class="menu_drop wrap clearfix">
+                                        <p><a class="gtm-Header-Team" data-pos="title" href="https://liverpool.gong.bg/" title="Ливърпул">Ливърпул</a></p>
+                                        
+                                        <a class="gtm-Header-Team" data-pos="all" href="https://liverpool.gong.bg/"><span>Всичко за Ливърпул</span></a>
+                                    </div> -->
+                                </li>
+                                                
+                                                <li>
+                                                        <button onclick="showArsenal()">
+                                                                <img alt="Арсенал" src="https://m.netinfo.bg/gong/images/teams/arsenalfc.png" height="41" width="41">
+                                                                
+                                                                </button>>
+                                    <!-- <div class="menu_drop wrap clearfix">
+                                        <p><a class="gtm-Header-Team" data-pos="title" href="https://arsenal.gong.bg/" title="Арсенал">Арсенал</a></p>
+                                        
+                                        <a class="gtm-Header-Team" data-pos="all" href="https://arsenal.gong.bg/"><span>Всичко за Арсенал</span></a>
+                                    </div> -->
+                                </li>
+                                                <li>
+                                                        <button onclick="showJuve()">
+                                                                <img alt="Ювентус" src="https://m.netinfo.bg/gong/images/teams/juventus_1.png" height="41" width="41">
+                                                                
+                                                                </button>>
+                                    <!-- <div class="menu_drop wrap clearfix">
+                                        <p><a class="gtm-Header-Team" data-pos="title" href="https://juventus.gong.bg/" title="Ювентус">Ювентус</a></p>
+                                        
+                                        <a class="gtm-Header-Team" data-pos="all" href="https://juventus.gong.bg/"><span>Всичко за Ювентус</span></a>
+                                    </div> -->
+                                </li>
+                                                
+                            </ul>
+                                </div>
+                                <a href="#" id="menu_more" class=""></a>
+                            </div>
+                        </nav>
+                    </div>
+            <!--                                    -->
+            <nav id="menu_wrap">
+                <div class="menu-top-head">
+                <ul class="wrap_s clearfix">
+                    <!-- <li>
+                        <a class="gtm-Header-Main" data-pos="logo" href="https://gong.bg/" title="Gong.bg">
+                                                            <img alt="НАЧАЛО" src="https://m.netinfo.bg/gong/images/logo_10Birthday_white.png">
+                        </a>
+                    </li> -->
+            
+            
+                    
+                        <div class="teams_head">
+                            <a href="https://barcelona.gong.bg/">
+                                <img alt="Байерн" src="https://m.netinfo.bg/gong/images/teams/bayernmunchen.png" height="111" width="111">
+                            </a>
+                            <!-- <h2>
+                                <a href="https://barcelona.gong.bg/">Барселона <span>barcelona.gong.bg</span></a>
+                            </h2> -->
+                        </div>
+            
+                  </ul>
+              </div>
+            
+                        <div class="second-section-nav">
+            
+                        
+                                                <div id="dateCarousel" class="first last">
+                                    
+                                    <div class="wrapper">
+                                        <div class="viewport">
+                                            <ul class="wrap_h clearfix">
+                                                
+                                                                                                                                                <li><a href="https://barcelona.gong.bg/" title="Новини" class="dateCarouselSelected ">Новини</a></li>
+                                                        
+                                                    
+                                                
+                                                                                                                                                <li><a href="https://barcelona.gong.bg/multimedia/video" title="Видео" class=" ">Видео</a></li>
+                                                        
+                                                    
+                                                
+                                                                                                                                                <li><a href="https://barcelona.gong.bg/multimedia/gallery" title="Галерии" class=" ">Галерии</a></li>
+                                                        
+                                                    
+                                                
+                                                                                                                                                <li><a href="https://barcelona.gong.bg/multimedia/audio" title="Аудио" class=" ">Аудио</a></li>
+                                                        
+                                                    
+                                                
+                                                                                                                                                <li><a href="https://barcelona.gong.bg/interview" title="Интервю" class=" ">Интервю</a></li>
+                                                        
+                                                    
+                                                
+                                                                                                                                                <li><a href="https://barcelona.gong.bg/comment" title="Коментар" class=" ">Коментар</a></li>
+                                                        
+                                                    
+                                                
+                                                                                                                                                <li><a href="https://barcelona.gong.bg/yellow" title="Жълто" class=" ">Жълто</a></li>
+                                                        
+                                                    
+                                                                                </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                                </div>
+                </nav>
+            
+</div>
+<div style="display:none;" id="RMDiv">
+        <nav id="team_wrap">
+                <div >
+                        <nav id="team_wrap">
+                            <div class="wrap">
+                                <div id="teams" class="clearfix" style="display: block;">
+                                        <ul class="clearfix">
+                                                <li>
+                                   <button onclick="showCSKA()" id="cskaButtons">
+                                        <img alt="ЦСКА" src="https://m.netinfo.bg/gong/images/teams/cska.png" height="41" width="41">
+                                    </button>
+                                    <!-- <a class="gtm-Header-Team" data-pos="main" href="https://cska.gong.bg/" title="ЦСКА">
+                                        <img class="ga_team" alt="ЦСКА" src="https://m.netinfo.bg/gong/images/teams/cska_small.png">
+                                        
+                                    </a>  -->
+                                    <!-- <div class="menu_drop wrap clearfix">
+                                        <p><a class="gtm-Header-Team" data-pos="title" href="https://cska.gong.bg/" title="ЦСКА">ЦСКА</a></p>
+                                        
+                                        <a class="gtm-Header-Team" data-pos="all" href="https://cska.gong.bg/"><span>Всичко за ЦСКА</span></a>
+                                    </div> -->
+                                </li>
+                                                <li>
+                                                     <button onclick="showLevski()" >
+                                                            <img alt="Левски" src="https://m.netinfo.bg/gong/images/teams/logo_new100.png" height="41" width="41">
+                                                      </button>
+                                    <!-- <div class="menu_drop wrap clearfix">
+                                        <p><a class="gtm-Header-Team" data-pos="title" href="https://levski.gong.bg/" title="Левски">Левски</a></p>
+                                        
+                                        <a class="gtm-Header-Team" data-pos="all" href="https://levski.gong.bg/"><span>Всичко за Левски</span></a>
+                                    </div> -->
+                                </li>
+                                                <li>
+                                                        <button onclick="showLudogorec()" >
+                                                                <img alt="Лудогорец" src="https://m.netinfo.bg/gong/images/teams/ludogoretz1.png" height="41" width="41">
+                                                          </button>
+                                    <!-- <div class="menu_drop wrap clearfix">
+                                        <p><a class="gtm-Header-Team" data-pos="title" href="https://ludogorets.gong.bg/" title="Лудогорец">Лудогорец</a></p>
+                                        
+                                        <a class="gtm-Header-Team" data-pos="all" href="https://ludogorets.gong.bg/"><span>Всичко за Лудогорец</span></a>
+                                    </div> -->
+                                </li>
+                                        
+                                 <li>
+                                        <button onclick="showBarca()">
+                                                <img alt="Барселона" src="https://m.netinfo.bg/gong/images/teams/fcb.png" height="41" width="41">
+                                        
+                                        </button>>
+                                    <!-- <div class="menu_drop wrap clearfix">
+                                        <p><a class="gtm-Header-Team" data-pos="title" href="https://barcelona.gong.bg/" title="Барселона">Барселона</a></p>
+                                        
+                                        <a class="gtm-Header-Team" data-pos="all" href="https://barcelona.gong.bg/"><span>Всичко за Барселона</span></a>
+                                    </div> -->
+                                </li>
+                                                <li>
+                                                        <button onclick="showRealMadrid()">
+                                                                <img alt="Реал Мадрид" src="https://m.netinfo.bg/gong/images/teams/realmadrid.png" height="41" width="41">
+                                                                
+                                                                </button>>
+                                    <!-- <div class="menu_drop wrap clearfix">
+                                        <p><a class="gtm-Header-Team" data-pos="title" href="https://real.gong.bg/" title="Реал Мадрид">Реал Мадрид</a></p>
+                                        
+                                        <a class="gtm-Header-Team" data-pos="all" href="https://real.gong.bg/"><span>Всичко за Реал Мадрид</span></a>
+                                    </div> -->
+                                </li>
+                                                <li>
+                                                        <button onclick="showBM()">
+                                                                <img alt="Байерн" src="https://m.netinfo.bg/gong/images/teams/bayernmunchen.png" height="41" width="41">
+                                                                
+                                                                </button>>
+                                    <!-- <div class="menu_drop wrap clearfix">
+                                        <p><a class="gtm-Header-Team" data-pos="title" href="https://bayern.gong.bg/" title="Байерн">Байерн</a></p>
+                                        
+                                        <a class="gtm-Header-Team" data-pos="all" href="https://bayern.gong.bg/"><span>Всичко за Байерн</span></a>
+                                    </div> -->
+                                </li>
+                                                <li>
+                                                        <button onclick="showMU()">
+                                                                <img alt="Манчестър Юнайтед" src="https://m.netinfo.bg/gong/images/teams/manchesterunited.png" height="41" width="41">
+                                                                
+                                                                </button>>
+                                    <!-- <div class="menu_drop wrap clearfix">
+                                        <p><a class="gtm-Header-Team" data-pos="title" href="https://manchester.gong.bg/" title="Манчестър Юнайтед">Манчестър Юнайтед</a></p>
+                                        
+                                        <a class="gtm-Header-Team" data-pos="all" href="https://manchester.gong.bg/"><span>Всичко за Манчестър Юнайтед</span></a>
+                                    </div> -->
+                                </li>
+                                                <li>
+                                                        <button onclick="showLiv()">
+                                                                <img alt="Ливърпул" src="https://m.netinfo.bg/gong/images/teams/liverpoolfc.png" height="41" width="41">
+                                                                
+                                                                </button>>
+                                    <!-- <div class="menu_drop wrap clearfix">
+                                        <p><a class="gtm-Header-Team" data-pos="title" href="https://liverpool.gong.bg/" title="Ливърпул">Ливърпул</a></p>
+                                        
+                                        <a class="gtm-Header-Team" data-pos="all" href="https://liverpool.gong.bg/"><span>Всичко за Ливърпул</span></a>
+                                    </div> -->
+                                </li>
+                                                
+                                                <li>
+                                                        <button onclick="showArsenal()">
+                                                                <img alt="Арсенал" src="https://m.netinfo.bg/gong/images/teams/arsenalfc.png" height="41" width="41">
+                                                                
+                                                                </button>>
+                                    <!-- <div class="menu_drop wrap clearfix">
+                                        <p><a class="gtm-Header-Team" data-pos="title" href="https://arsenal.gong.bg/" title="Арсенал">Арсенал</a></p>
+                                        
+                                        <a class="gtm-Header-Team" data-pos="all" href="https://arsenal.gong.bg/"><span>Всичко за Арсенал</span></a>
+                                    </div> -->
+                                </li>
+                                                <li>
+                                                        <button onclick="showJuve()">
+                                                                <img alt="Ювентус" src="https://m.netinfo.bg/gong/images/teams/juventus_1.png" height="41" width="41">
+                                                                
+                                                                </button>>
+                                    <!-- <div class="menu_drop wrap clearfix">
+                                        <p><a class="gtm-Header-Team" data-pos="title" href="https://juventus.gong.bg/" title="Ювентус">Ювентус</a></p>
+                                        
+                                        <a class="gtm-Header-Team" data-pos="all" href="https://juventus.gong.bg/"><span>Всичко за Ювентус</span></a>
+                                    </div> -->
+                                </li>
+                                                
+                            </ul>
+                                </div>
+                                <a href="#" id="menu_more" class=""></a>
+                            </div>
+                        </nav>
+                    </div>
+            <!--                                    -->
+            <nav id="menu_wrap">
+                <div class="menu-top-head">
+                <ul class="wrap_s clearfix">
+                    <!-- <li>
+                        <a class="gtm-Header-Main" data-pos="logo" href="https://gong.bg/" title="Gong.bg">
+                                                            <img alt="НАЧАЛО" src="https://m.netinfo.bg/gong/images/logo_10Birthday_white.png">
+                        </a>
+                    </li> -->
+            
+            
+                    
+                        <div class="teams_head">
+                            <a href="https://barcelona.gong.bg/">
+                                <img alt="Реал Мадрид" src="https://m.netinfo.bg/gong/images/teams/realmadrid.png" height="111" width="111">
+                            </a>
+                            <!-- <h2>
+                                <a href="https://barcelona.gong.bg/">Барселона <span>barcelona.gong.bg</span></a>
+                            </h2> -->
+                        </div>
+            
+                  </ul>
+              </div>
+            
+                        <div class="second-section-nav">
+            
+                        
+                                                <div id="dateCarousel" class="first last">
+                                    
+                                    <div class="wrapper">
+                                        <div class="viewport">
+                                            <ul class="wrap_h clearfix">
+                                                
+                                                                                                                                                <li><a href="https://barcelona.gong.bg/" title="Новини" class="dateCarouselSelected ">Новини</a></li>
+                                                        
+                                                    
+                                                
+                                                                                                                                                <li><a href="https://barcelona.gong.bg/multimedia/video" title="Видео" class=" ">Видео</a></li>
+                                                        
+                                                    
+                                                
+                                                                                                                                                <li><a href="https://barcelona.gong.bg/multimedia/gallery" title="Галерии" class=" ">Галерии</a></li>
+                                                        
+                                                    
+                                                
+                                                                                                                                                <li><a href="https://barcelona.gong.bg/multimedia/audio" title="Аудио" class=" ">Аудио</a></li>
+                                                        
+                                                    
+                                                
+                                                                                                                                                <li><a href="https://barcelona.gong.bg/interview" title="Интервю" class=" ">Интервю</a></li>
+                                                        
+                                                    
+                                                
+                                                                                                                                                <li><a href="https://barcelona.gong.bg/comment" title="Коментар" class=" ">Коментар</a></li>
+                                                        
+                                                    
+                                                
+                                                                                                                                                <li><a href="https://barcelona.gong.bg/yellow" title="Жълто" class=" ">Жълто</a></li>
+                                                        
+                                                    
+                                                                                </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                                </div>
+                </nav>
+            
+</div>
+<div style="display:none;" id="LevskiDiv">
+        <nav id="team_wrap">
+                <div >
+                        <nav id="team_wrap">
+                            <div class="wrap">
+                                <div id="teams" class="clearfix" style="display: block;">
+                                        <ul class="clearfix">
+                                                <li>
+                                   <button onclick="showCSKA()" id="cskaButtons">
+                                        <img alt="ЦСКА" src="https://m.netinfo.bg/gong/images/teams/cska.png" height="41" width="41">
+                                    </button>
+                                    <!-- <a class="gtm-Header-Team" data-pos="main" href="https://cska.gong.bg/" title="ЦСКА">
+                                        <img class="ga_team" alt="ЦСКА" src="https://m.netinfo.bg/gong/images/teams/cska_small.png">
+                                        
+                                    </a>  -->
+                                    <!-- <div class="menu_drop wrap clearfix">
+                                        <p><a class="gtm-Header-Team" data-pos="title" href="https://cska.gong.bg/" title="ЦСКА">ЦСКА</a></p>
+                                        
+                                        <a class="gtm-Header-Team" data-pos="all" href="https://cska.gong.bg/"><span>Всичко за ЦСКА</span></a>
+                                    </div> -->
+                                </li>
+                                                <li>
+                                                     <button onclick="showLevski()" >
+                                                            <img alt="Левски" src="https://m.netinfo.bg/gong/images/teams/logo_new100.png" height="41" width="41">
+                                                      </button>
+                                    <!-- <div class="menu_drop wrap clearfix">
+                                        <p><a class="gtm-Header-Team" data-pos="title" href="https://levski.gong.bg/" title="Левски">Левски</a></p>
+                                        
+                                        <a class="gtm-Header-Team" data-pos="all" href="https://levski.gong.bg/"><span>Всичко за Левски</span></a>
+                                    </div> -->
+                                </li>
+                                                <li>
+                                                        <button onclick="showLudogorec()" >
+                                                                <img alt="Лудогорец" src="https://m.netinfo.bg/gong/images/teams/ludogoretz1.png" height="41" width="41">
+                                                          </button>
+                                    <!-- <div class="menu_drop wrap clearfix">
+                                        <p><a class="gtm-Header-Team" data-pos="title" href="https://ludogorets.gong.bg/" title="Лудогорец">Лудогорец</a></p>
+                                        
+                                        <a class="gtm-Header-Team" data-pos="all" href="https://ludogorets.gong.bg/"><span>Всичко за Лудогорец</span></a>
+                                    </div> -->
+                                </li>
+                                        
+                                 <li>
+                                        <button onclick="showBarca()">
+                                                <img alt="Барселона" src="https://m.netinfo.bg/gong/images/teams/fcb.png" height="41" width="41">
+                                        
+                                        </button>>
+                                    <!-- <div class="menu_drop wrap clearfix">
+                                        <p><a class="gtm-Header-Team" data-pos="title" href="https://barcelona.gong.bg/" title="Барселона">Барселона</a></p>
+                                        
+                                        <a class="gtm-Header-Team" data-pos="all" href="https://barcelona.gong.bg/"><span>Всичко за Барселона</span></a>
+                                    </div> -->
+                                </li>
+                                                <li>
+                                                        <button onclick="showRealMadrid()">
+                                                                <img alt="Реал Мадрид" src="https://m.netinfo.bg/gong/images/teams/realmadrid.png" height="41" width="41">
+                                                                
+                                                                </button>>
+                                    <!-- <div class="menu_drop wrap clearfix">
+                                        <p><a class="gtm-Header-Team" data-pos="title" href="https://real.gong.bg/" title="Реал Мадрид">Реал Мадрид</a></p>
+                                        
+                                        <a class="gtm-Header-Team" data-pos="all" href="https://real.gong.bg/"><span>Всичко за Реал Мадрид</span></a>
+                                    </div> -->
+                                </li>
+                                                <li>
+                                                        <button onclick="showBM()">
+                                                                <img alt="Байерн" src="https://m.netinfo.bg/gong/images/teams/bayernmunchen.png" height="41" width="41">
+                                                                
+                                                                </button>>
+                                    <!-- <div class="menu_drop wrap clearfix">
+                                        <p><a class="gtm-Header-Team" data-pos="title" href="https://bayern.gong.bg/" title="Байерн">Байерн</a></p>
+                                        
+                                        <a class="gtm-Header-Team" data-pos="all" href="https://bayern.gong.bg/"><span>Всичко за Байерн</span></a>
+                                    </div> -->
+                                </li>
+                                                <li>
+                                                        <button onclick="showMU()">
+                                                                <img alt="Манчестър Юнайтед" src="https://m.netinfo.bg/gong/images/teams/manchesterunited.png" height="41" width="41">
+                                                                
+                                                                </button>>
+                                    <!-- <div class="menu_drop wrap clearfix">
+                                        <p><a class="gtm-Header-Team" data-pos="title" href="https://manchester.gong.bg/" title="Манчестър Юнайтед">Манчестър Юнайтед</a></p>
+                                        
+                                        <a class="gtm-Header-Team" data-pos="all" href="https://manchester.gong.bg/"><span>Всичко за Манчестър Юнайтед</span></a>
+                                    </div> -->
+                                </li>
+                                                <li>
+                                                        <button onclick="showLiv()">
+                                                                <img alt="Ливърпул" src="https://m.netinfo.bg/gong/images/teams/liverpoolfc.png" height="41" width="41">
+                                                                
+                                                                </button>>
+                                    <!-- <div class="menu_drop wrap clearfix">
+                                        <p><a class="gtm-Header-Team" data-pos="title" href="https://liverpool.gong.bg/" title="Ливърпул">Ливърпул</a></p>
+                                        
+                                        <a class="gtm-Header-Team" data-pos="all" href="https://liverpool.gong.bg/"><span>Всичко за Ливърпул</span></a>
+                                    </div> -->
+                                </li>
+                                                
+                                                <li>
+                                                        <button onclick="showArsenal()">
+                                                                <img alt="Арсенал" src="https://m.netinfo.bg/gong/images/teams/arsenalfc.png" height="41" width="41">
+                                                                
+                                                                </button>>
+                                    <!-- <div class="menu_drop wrap clearfix">
+                                        <p><a class="gtm-Header-Team" data-pos="title" href="https://arsenal.gong.bg/" title="Арсенал">Арсенал</a></p>
+                                        
+                                        <a class="gtm-Header-Team" data-pos="all" href="https://arsenal.gong.bg/"><span>Всичко за Арсенал</span></a>
+                                    </div> -->
+                                </li>
+                                                <li>
+                                                        <button onclick="showJuve()">
+                                                                <img alt="Ювентус" src="https://m.netinfo.bg/gong/images/teams/juventus_1.png" height="41" width="41">
+                                                                
+                                                                </button>>
+                                    <!-- <div class="menu_drop wrap clearfix">
+                                        <p><a class="gtm-Header-Team" data-pos="title" href="https://juventus.gong.bg/" title="Ювентус">Ювентус</a></p>
+                                        
+                                        <a class="gtm-Header-Team" data-pos="all" href="https://juventus.gong.bg/"><span>Всичко за Ювентус</span></a>
+                                    </div> -->
+                                </li>
+                                                
+                            </ul>
+                                </div>
+                                <a href="#" id="menu_more" class=""></a>
+                            </div>
+                        </nav>
+                    </div>
+            <!--                                    -->
+            <nav id="menu_wrap">
+                <div class="menu-top-head">
+                <ul class="wrap_s clearfix">
+                    <!-- <li>
+                        <a class="gtm-Header-Main" data-pos="logo" href="https://gong.bg/" title="Gong.bg">
+                                                            <img alt="НАЧАЛО" src="https://m.netinfo.bg/gong/images/logo_10Birthday_white.png">
+                        </a>
+                    </li> -->
+            
+            
+                    
+                        <div class="teams_head">
+                            <a href="https://barcelona.gong.bg/">
+                                <img alt="Левски" src="https://m.netinfo.bg/gong/images/teams/logo_new100.png" height="111" width="111">
+                            </a>
+                            <!-- <h2>
+                                <a href="https://barcelona.gong.bg/">Барселона <span>barcelona.gong.bg</span></a>
+                            </h2> -->
+                        </div>
+            
+                  </ul>
+              </div>
+            
+                        <div class="second-section-nav">
+            
+                        
+                                                <div id="dateCarousel" class="first last">
+                                    
+                                    <div class="wrapper">
+                                        <div class="viewport">
+                                            <ul class="wrap_h clearfix">
+                                                
+                                                                                                                                                <li><a href="https://barcelona.gong.bg/" title="Новини" class="dateCarouselSelected ">Новини</a></li>
+                                                        
+                                                    
+                                                
+                                                                                                                                                <li><a href="https://barcelona.gong.bg/multimedia/video" title="Видео" class=" ">Видео</a></li>
+                                                        
+                                                    
+                                                
+                                                                                                                                                <li><a href="https://barcelona.gong.bg/multimedia/gallery" title="Галерии" class=" ">Галерии</a></li>
+                                                        
+                                                    
+                                                
+                                                                                                                                                <li><a href="https://barcelona.gong.bg/multimedia/audio" title="Аудио" class=" ">Аудио</a></li>
+                                                        
+                                                    
+                                                
+                                                                                                                                                <li><a href="https://barcelona.gong.bg/interview" title="Интервю" class=" ">Интервю</a></li>
+                                                        
+                                                    
+                                                
+                                                                                                                                                <li><a href="https://barcelona.gong.bg/comment" title="Коментар" class=" ">Коментар</a></li>
+                                                        
+                                                    
+                                                
+                                                                                                                                                <li><a href="https://barcelona.gong.bg/yellow" title="Жълто" class=" ">Жълто</a></li>
+                                                        
+                                                    
+                                                                                </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                                </div>
+                </nav>
+            
+</div>
+</body>
