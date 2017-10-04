@@ -29,3 +29,6 @@ li button {
 li a:hover {
     background-color: aquamarine;
 }
+.navbar-default{
+    width: 100%;
+}
