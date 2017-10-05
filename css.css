@@ -32,3 +32,12 @@ li a:hover {
 .nav-element{
     color: black;
 }
+.custom_li{
+    display:inline-block;
+    height: 90px;
+    width: 230px;
+ }
+ .container-fluid{
+     background-color: #302E2E;
+ }
+ 
