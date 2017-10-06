@@ -1,3 +1,88 @@
+.wrapper {
+    display: grid;
+    padding: 1%;
+    margin:1%;
+    grid-template-rows: repeat(21,1fr);
+
+    border-radius: 2%;
+    border-style: solid;
+    border-color: rgba(16,8,15,0.25);
+
+}
+.attributes div{
+    font-weight: bold;
+}
+.logo{
+    width: 25%;
+    height: auto;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+.attributes {
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    border-bottom: solid;
+    border-bottom-color: black;
+    border-radius: 8%;
+}
+.single-team{
+    display: grid;
+    grid-template-columns: repeat(16,1fr);
+    border-bottom: solid;
+    border-bottom-color: rgba(15,2,16,0.25);
+
+}
+.teams{
+
+    grid-column-start: 3;
+    grid-column-end: 7;
+}
+.rank{
+    padding-left: 2%;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+.mp{
+
+    grid-column-start: 7;
+    grid-column-end: 8;
+}
+.wins{
+
+    grid-column-start: 8;
+    grid-column-end: 9;
+}
+.draws{
+
+    grid-column-start: 9;
+    grid-column-end: 10;
+}
+.losses{
+
+    grid-column-start: 10;
+    grid-column-end: 11;
+}
+.gf{
+
+    grid-column-start: 11;
+    grid-column-end: 12;
+}
+.ga{
+
+    grid-column-start: 12;
+    grid-column-end: 13;
+}
+.gd{
+
+    grid-column-start: 13;
+    grid-column-end: 14;
+}
+.points{
+
+    grid-column-start: 14;
+    grid-column-end: 16;
+}
+
 ul {
     list-style-type: none;
     margin: 0;

@@ -6,6 +6,8 @@
     <title>Just Football</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css.css" media="screen"/>
+    <script src="visualizer.js"></script>
+
 </head>
 <body>
 <!-- TODO beatutify navbar-->
@@ -16,7 +18,7 @@
       </div> -->
       <ul class="nav navbar-nav">
         <!-- <li class="active"><a href="#">Home</a></li> -->
-        <li class="custom_li"><a href="#"><img alt="Арсенал" src="images/arsenal.png" height="41" width="41"></a></li>
+        <li class="custom_li"><a  id='arsenal' href="#"><img alt="Арсенал" src="images/arsenal.png" height="41" width="41"></a></li>
         <li class="custom_li"><a href="#"><img alt="Барселона" src="images/barca.png" height="41" width="41"></a></li>
         <li class="custom_li"><a href="#"><img alt="Реал Мадрид" src="images/realmadrid.png" height="41" width="41"></a></li>
         <li class="custom_li"><a href="#"><img alt="Байерн" src="images/bm.png" height="41" width="41"></a></li>
@@ -36,11 +38,18 @@
           </div>
         </div>
       </div>
-      
+      <div id="teamInfo">
+
+      </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
 <script src="ajax_provider.js"></script>
+
+<script src="just_football.js"></script>
+
 <script src="js.js"></script>
 </body>
 </html>

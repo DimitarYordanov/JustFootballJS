@@ -3,8 +3,8 @@ $(function () {
     $('#fav-team').click(function () {
 
     });
-    $('#first-league').click(function () {
-
+    $('#arsenal').click(function () {
+        ajaxModule.visualizeTable(visualizerModule.printTable,'PL');
     });
     $('#second-league').click(function () {
 
@@ -12,5 +12,6 @@ $(function () {
     $('#third-league').click(function () {
 
     });
+
 
 });

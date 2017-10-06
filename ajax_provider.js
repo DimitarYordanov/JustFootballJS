@@ -1,5 +1,4 @@
-$(function () {
-    let ajaxModule = (function () {
+    const ajaxModule = function () {
         const competitionsUrl = 'http://api.football-data.org/v1/competitions';
 
         function visualizeLeagueLogos(callback, leagueName) {
@@ -157,6 +156,7 @@ $(function () {
 
             firstPromise().then(secondPromise);
         }
+        //visualizeTable(console.log,'PL');
 
         return {
             visualizeLeagueLogos,
@@ -165,7 +165,7 @@ $(function () {
             visualizeTeamFixtures,
             visualizeTable
         };
-    })();
-});
+
+    }();
 
 
