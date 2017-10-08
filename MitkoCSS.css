@@ -1,0 +1,377 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 25px 72.5px;
+        text-decoration: none;
+    }
+
+
+
+/*.button {
+    color: white;
+    text-align: center;
+    height: auto;
+    width: auto;
+}*/
+
+.logobutton {
+    color: white;
+    text-align: center;
+    height: auto;
+    width: auto;
+}
+
+.center {
+    display: block;
+    margin-top: 100px;
+    margin-right: 45%;
+    margin-bottom: auto;
+    margin-left: 45%;
+}
+
+mark {
+    color: black;
+}
+
+mottotext {
+    display: block;
+    color: white;
+    text-align: center;
+    font-size: 45px;
+}
+
+.mottofooter {
+    float: right;
+    display: block;
+    font-size: 22px;
+    color: white
+}
+/* Change the link color to #111 (black) on hover */
+custom_li:hover {
+    background-color: aquamarine;
+}
+
+.navbar-inverse .navbar-nav > li > a:focus, .navbar-inverse .navbar-nav > li > a:hover {
+    background-color: aquamarine
+}
+/*.navbar-header {
+    height: 72.5px;
+    width: 157px;
+    float: left;
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+}*/
+.custom_li {
+    display: inline-block;
+    height: 72.5px;
+    width: 150px;
+}
+
+button {
+    display: inline-block;
+    height: 72.5px;
+    width: 155px;
+}
+
+.container-fluid {
+    background-color: #302E2E;
+}
+
+.navBarWrapper {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.bar {
+    height: 8.02%;
+    overflow: auto;
+}
+
+.homebutton {
+    font-size: 44px;
+    font-style: italic;
+    text-decoration: none;
+}
+
+    .homebutton:hover {
+        background-color: aquamarine;
+    }
+
+/* Players table style: */
+
+.player-wrapper {
+    display: grid;
+    padding: 1%;
+    margin: 1%;
+    grid-template-rows: repeat(6,1fr);
+    border-radius: 2%;
+    border-style: solid;
+    border-color: rgba(16,8,15,0.25);
+}
+
+.player-attributes div {
+    font-weight: bold;
+}
+
+.player-name {
+    padding-left: 2%;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    text-align: center
+}
+
+.nationality {
+    width: 25%;
+    height: auto;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    text-align: center
+}
+
+.position {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    text-align: center
+}
+
+.jersey-number {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    text-align: center
+}
+
+.contract-end {
+    grid-column-start: 5;
+    grid-column-end: 6;
+    text-align: center
+}
+
+.market-value {
+    grid-column-start: 6;
+    grid-column-end: 7;
+    text-align: center
+}
+
+.attributes {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    border-bottom: solid;
+    border-bottom-color: black;
+    border-radius: 8%;
+}
+
+.single-player {
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    border-bottom: solid;
+    border-bottom-color: rgba(15,2,16,0.25);
+}
+
+
+/* Fixtures style: */
+
+.single-fixture {
+    display: grid;
+    grid-template-columns: repeat(16,1fr);
+    border-bottom: solid;
+    border-bottom-color: rgba(15,2,16,0.25);
+}
+
+    .fixtures-wrapper {
+    display: grid;
+    padding: 1%;
+    margin: 1%;
+    grid-template-rows: repeat(2,1fr);
+    border-radius: 2%;
+    border-style: solid;
+    border-color: rgba(16,8,15,0.25);
+}
+
+.fixtures-attributes div {
+    font-weight: bold;
+}
+
+.fixtures-home-team {
+    padding-left: 2%;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    text-align: center
+}
+
+.fixtures-guest-team {
+    width: 25%;
+    height: auto;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    text-align: center
+}
+
+.fixtures-home-team-result {
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+.fixtures-guest-team-result {
+    grid-column-start: 4;
+    grid-column-end: 5;
+}
+
+.fixtures-datetime {
+}
+
+.home-team-result {
+}
+
+.guest-team-result {
+}
+.wrapper {
+    display: grid;
+    padding: 1%;
+    margin:1%;
+    grid-template-rows: repeat(21,1fr);
+
+    border-radius: 2%;
+    border-style: solid;
+    border-color: rgba(16,8,15,0.25);
+
+}
+.attributes div{
+    font-weight: bold;
+}
+.logo{
+    width: 25%;
+    height: auto;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+.attributes {
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    border-bottom: solid;
+    border-bottom-color: black;
+    border-radius: 8%;
+}
+.single-team{
+    display: grid;
+    grid-template-columns: repeat(16,1fr);
+    border-bottom: solid;
+    border-bottom-color: rgba(15,2,16,0.25);
+
+}
+.teams{
+
+    grid-column-start: 3;
+    grid-column-end: 7;
+}
+.rank{
+    padding-left: 2%;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+.mp{
+
+    grid-column-start: 7;
+    grid-column-end: 8;
+}
+.wins{
+
+    grid-column-start: 8;
+    grid-column-end: 9;
+}
+.draws{
+
+    grid-column-start: 9;
+    grid-column-end: 10;
+}
+.losses{
+
+    grid-column-start: 10;
+    grid-column-end: 11;
+}
+.gf{
+
+    grid-column-start: 11;
+    grid-column-end: 12;
+}
+.ga{
+
+    grid-column-start: 12;
+    grid-column-end: 13;
+}
+.gd{
+
+    grid-column-start: 13;
+    grid-column-end: 14;
+}
+.points{
+
+    grid-column-start: 14;
+    grid-column-end: 16;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 25px 72.5px;
+    text-decoration: none;
+}
+li button {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 25px 72.5px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: aquamarine;
+}
+.nav-element{
+    color: black;
+}
+.custom_li{
+    display:inline-block;
+    height: 90px;
+    width: 230px;
+ }
+ .container-fluid{
+     background-color: #302E2E;
+ }
+ 

@@ -60,6 +60,7 @@
             }
 
             function filterByName(data) {
+                
                 for (let competition of data) {
                     if (competition.league === leagueName) {
                         return competition._links.teams.href;
@@ -69,7 +70,7 @@
 
             function getTeam(data) {
                 for (let club of data.teams) {
-                    if (club.code === teamName) {
+                    if (club.shortName === teamName) {
                         return club;
                     }
                 }

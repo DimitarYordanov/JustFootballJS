@@ -71,9 +71,44 @@ const visualizerModule = function () {
         }
         $('#teamInfo').append(wrapperWithAttr);
     }
-
-    return {
-        printTable
+    function printFixture(data) {
+        
+                let wrapper = $('<div class="fixtures-wrapper"></div>');
+                let attributes = $('<div class="fixtures-attributes"></div>');
+        
+                attributes.append('<div class="fixtures-home-team">Home Team</div>');
+                attributes.append('<div class="fixtures-guest-team">Guest Team</div>');
+                attributes.append('<div class="fixtures-home-team-result"></div>');
+                attributes.append('<div class="fixtures-guest-team-result"></div>');
+                let wrapperWithAttr = wrapper.append(attributes);
+        
+                for (let fixture of data.fixtures) {
+                    let singleFixture = $('<div class="single-fixture">');
+        
+                    let firstSpan = $('<span class="fixtures-home-team"></span>');
+                    firstSpan.append(`${fixture.homeTeamName}`);
+                    singleFixture.append(firstSpan);
+        
+                    let secondSpan = $(' <span class="fixtures-guest-team"></span>');
+                    secondSpan.append(`${fixture.awayTeamName}`);
+                    singleFixture.append(secondSpan);
+        
+                    let thirdSpan = $('<span class="fixtures-home-team-result"></span>');
+                    thirdSpan.append(`${fixture.result.goalsHomeTeam}`);
+                    singleFixture.append(thirdSpan);
+        
+                    let fourthSpan = $('<span class="fixtures-guest-team-result"></span>');
+                    fourthSpan.append(`${fixture.result.goalsAwayTeam}`);
+                    singleFixture.append(fourthSpan);
+                    
+                    wrapperWithAttr.append(singleFixture);
+                }
+                $('#teamInfo').append(wrapperWithAttr);
+            }
+        
+            return {
+            printFixture,
+            printTable
     }
 }();
 

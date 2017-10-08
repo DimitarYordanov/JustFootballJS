@@ -1,55 +1,79 @@
-    <!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Just Football</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css.css" media="screen"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+    
+    <script src="ajax_provider.js"></script>
     <script src="visualizer.js"></script>
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="MitkoCSS.css" media="screen">
 </head>
 <body>
-<!-- TODO beatutify navbar-->
-<nav class="navbar navbar-inverse">
-    <div class="container-fluid">
-      <!-- <div class="navbar-header">
-        <a class="navbar-brand" href="#">WebSiteName</a>
-      </div> -->
-      <ul class="nav navbar-nav">
-        <!-- <li class="active"><a href="#">Home</a></li> -->
-        <li class="custom_li"><a  id='arsenal' href="#"><img alt="Арсенал" src="images/arsenal.png" height="41" width="41"></a></li>
-        <li class="custom_li"><a href="#"><img alt="Барселона" src="images/barca.png" height="41" width="41"></a></li>
-        <li class="custom_li"><a href="#"><img alt="Реал Мадрид" src="images/realmadrid.png" height="41" width="41"></a></li>
-        <li class="custom_li"><a href="#"><img alt="Байерн" src="images/bm.png" height="41" width="41"></a></li>
-        <li class="custom_li"><a href="#"><img alt="Манчестър Юнайтед" src="images/mutd.png" height="41" width="41"></a></li>
-        <li class="custom_li"><a href="#"><img alt="Ливърпул" src="images/liverpool.png" height="41" width="41"></a></li>
-        <li class="custom_li"><a href="#"><img alt="Ювентус" src="images/juventus.png" height="41" width="41"></a></li>
-        <li class="custom_li"><a href="#"><img alt="ПСЖ" src="images/psg.png" height="41" width="41"></a></li>
-      </ul>
-    </div>
-  </nav>
-  <div class="container-fluid">
-        
+    <nav class="navbar navbar-inverse">
         <div class="container-fluid">
-          <div class="container-fluid">
-             <img alt="ЦСКА" src="https://m.netinfo.bg/gong/images/teams/cska.png" height="222" width="222">
-             
-          </div>
+            <div class="navbar-header"> <a href="#" class="navbar-toggle homebutton" data-toggle="collapse" style="float:left">JustFootball</a>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="custom_li"><a href="#" class="teamButton" id="Arsenal"><img alt="Арсенал" src="images/arsenal.png" height="41" width="41"></a></li>
+                    <li class="custom_li"><a href="#" class="teamButton" id="Barcelona"><img alt="Барселона" src="images/barca.png" height="41" width="41"></a></li>
+                    <li class="custom_li"><a href="#" class="teamButton" id="Real Madrid"><img alt="Реал Мадрид" src="images/realmadrid.png" height="41" width="41"></a></li>
+                    <li class="custom_li"><a href="#" class="teamButton" id="Bayern"><img alt="Байерн" src="images/bm.png" height="41" width="41"></a></li>
+                    <li class="custom_li"><a href="#" class="teamButton" id="ManU"><img alt="Манчестър Юнайтед" src="images/mutd.png" height="41" width="41"></a></li>
+                    <li class="custom_li"><a href="#" class="teamButton" id="Liverpool"><img alt="Ливърпул" src="images/liverpool.png" height="41" width="41"></a></li>
+                    <li class="custom_li"><a href="#" class="teamButton" id="Juventus"><img alt="Ювентус"src="images/juventus.png" height="41" width="41"></a></li>
+                    <li class="custom_li"><a href="#" class="teamButton" id="PSG" ><img alt="ПСЖ"src="images/psg.png" height="41" width="41"></a></li>
+
+                </ul>
+            </div>  
         </div>
-      </div>
-      <div id="teamInfo">
+    </nav>
 
-      </div>
+    <div class="container-fluid">
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <p style=" float: left"><img alt="ЦСКА" src="https://m.netinfo.bg/gong/images/teams/cska.png" class="img-rounded" height="222" width="222"></p>
 
+        <blockquote>
+            <p>
+                <mottotext>Team Name</mottotext>
+                <footer style="float: right; display:block; font-size: 22px; color: white">Formed since YYYY</footer>
+                </br>
+            </p>
 
-<script src="ajax_provider.js"></script>
+            <p>
+                <h1 style="color:white">Just Football!</h1>
+            </p>
+        </blockquote>
+    </div>
 
-<script src="just_football.js"></script>
+    <nav class="navbar navbar-inverse">
+            <div class="left">
+                <ul>
+                    <li class="logobutton"><a href="#"><img alt="brand" src="images/logo.png" height="23px" width="23px"></a></li>
+                    <li class="custom_li"><a  class="detailsButton" id="players" href="#"><img alt="Players" src="images/football.ico" height="23px" width="23px"> Players</a></li>
+                    <li class="button"><a class="detailsButton" id="league" href="#"><img alt="League" src="images/league.png" height="23px" width="23px"> League Table</a></li>
+                    <li class="button"><a class="detailsButton" id="fixtures" href="#"><img alt="Fixtures" src="images/fixtures.png" height="23px" width="23px"> Fixtures</a></li>
+                </ul>
+            </div>
+    </nav>
 
-<script src="js.js"></script>
+    <div class="center">
+        <p><img alt="brand" src="images/logo.png" height="250px" width="250px"></p>
+    </div>
+    <div id="teamInfo"></div>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="StartUp.js"></script>
+    
+    
+    
 </body>
 </html>
