@@ -2,10 +2,10 @@ const visualizerModule = function () {
 
     function printTable(data) {
 
+        $('#teamInfo').empty();
+
         let wrapper = $('<div class="wrapper"></div>');
         let attributes = $('<div class="attributes"></div>');
-        
-        $('#teamInfo').empty();
 
         attributes.append('<div class="rank">Standing</div>');
         attributes.append('<div class="logo"></div>');
@@ -73,108 +73,121 @@ const visualizerModule = function () {
         }
         $('#teamInfo').append(wrapperWithAttr);
     }
+
     function printFixture(data) {
-        
-                let wrapper = $('<div class="fixtures-wrapper"></div>');
-                let attributes = $('<div class="fixtures-attributes"></div>');
 
-                $('#teamInfo').empty();
-        
-                attributes.append('<div class="fixtures-home-team">Home Team</div>');
-                attributes.append('<div class="fixtures-guest-team">Guest Team</div>');
-                attributes.append('<div class="fixtures-home-team-result"></div>');
-                attributes.append('<div class="fixtures-guest-team-result"></div>');
-                let wrapperWithAttr = wrapper.append(attributes);
-        
-                for (let fixture of data.fixtures) {
-                    let singleFixture = $('<div class="single-fixture">');
-        
-                    let firstSpan = $('<span class="fixtures-home-team"></span>');
-                    firstSpan.append(`${fixture.homeTeamName}`);
-                    singleFixture.append(firstSpan);
-        
-                    let secondSpan = $(' <span class="fixtures-guest-team"></span>');
-                    secondSpan.append(`${fixture.awayTeamName}`);
-                    singleFixture.append(secondSpan);
-        
-                    let thirdSpan = $('<span class="fixtures-home-team-result"></span>');
-                    thirdSpan.append(`${fixture.result.goalsHomeTeam}`);
-                    singleFixture.append(thirdSpan);
-        
-                    let fourthSpan = $('<span class="fixtures-guest-team-result"></span>');
-                    fourthSpan.append(`${fixture.result.goalsAwayTeam}`);
-                    singleFixture.append(fourthSpan);
-                    
-                    wrapperWithAttr.append(singleFixture);
-                }
-                $('#teamInfo').append(wrapperWithAttr);
-            }
-            function printPlayers(data) {
-                
-                        let wrapper = $('<div class="player-wrapper"></div>');
-                        let attributes = $('<div class="player-attributes"></div>');
+        $('#teamInfo').empty();
+        let wrapper = $('<div class="fixtures-wrapper"></div>');
+        let attributes = $('<div class="fixtures-attributes"></div>');
 
-                        $('#teamInfo').empty();
+        attributes.append('<div class="fixtures-home-team">Home Team</div>');
+        attributes.append('<div class="fixtures-guest-team">Guest Team</div>');
+        attributes.append('<div class="fixtures-home-team-result"></div>');
+        attributes.append('<div class="fixtures-guest-team-result"></div>');
+        attributes.append('<div class="fixtures-date">Date</div>');
+        let wrapperWithAttr = wrapper.append(attributes);
 
-                        attributes.append('<div class="player-name">Player Name</div>');
-                        attributes.append('<div class="nationality">Nationality</div>');
-                        attributes.append('<div class="position">Position</div>');
-                        attributes.append('<div class="jersey-number">Jersey Number</div>');
-                        attributes.append('<div class="contract-end">Contract End Date</div>');
-                        attributes.append('<div class="market-value">Jersey Number</div>');
-                        let wrapperWithAttr = wrapper.append(attributes);
-                
-                        for (let player of data.players) {
-                            let singlePlayer = $('<div class="single-player"></div>');
-                
-                            let playerName = $('<span class="player-name"></span>');
-                            playerName.append(`${player.name}`);
-                            singlePlayer.append(playerName);
+        for (let fixture of data.fixtures) {
+            let singleFixture = $('<div class="single-fixture">');
 
-                            let nationality = $('<span class="nationality"></span>');
-                            nationality.append(`${player.nationality}`);
-                            singlePlayer.append(nationality);
-                
-                            let position = $('<span class="position"></span>');
-                            position.append(`${player.position}`);
-                            singlePlayer.append(position);
+            let firstSpan = $('<span class="fixtures-home-team"></span>');
+            firstSpan.append(`${fixture.homeTeamName}`);
+            singleFixture.append(firstSpan);
 
-                            let jerseyNumber = $('<span class="jersey-number"></span>');
-                            jerseyNumber.append(`${player.jerseyNumber}`);
-                            singlePlayer.append(jerseyNumber);
-                
-                            let contractEnd = $('<span class="contract-end"></span>');
-                            contractEnd.append(`${player.contractUntil}`);
-                            singlePlayer.append(contractEnd);
-                
-                            let marketValue = $('<span class="market-value"></span>');
-                            marketValue.append(`${player.marketValue}`);
-                            singlePlayer.append(marketValue);
-                            
-                            wrapperWithAttr.append(singlePlayer);
-                        }
-                        $('#teamInfo').append(wrapperWithAttr);
-                    }
-                    
-                    function currentTeam(team){
-                        let wrapper = $('<div class="fav-team"></div>');
-                        let attributes = $('<div class="favTeam-attributes"></div>');
-                        $('.bigLogo').empty();
-                    
-                        let paragraph = $('<p></p>');
-                        let url = `images/${team}.png`;
-                        let image = $('<img class="favTeamLogo"></img>').attr('src', url);
-                        paragraph.append(image);
-                        attributes.append(paragraph);
-                        wrapper.append(attributes);
-                        $('.bigLogo').append(wrapper);
-                    }
+            let secondSpan = $(' <span class="fixtures-guest-team"></span>');
+            secondSpan.append(`${fixture.awayTeamName}`);
+            singleFixture.append(secondSpan);
 
-            return {
-            currentTeam,
-            printPlayers,
-            printFixture,
-            printTable
+            let thirdSpan = $('<span class="fixtures-home-team-result"></span>');
+            thirdSpan.append(`${fixture.result.goalsHomeTeam}`);
+            singleFixture.append(thirdSpan);
+
+            let fourthSpan = $('<span class="fixtures-guest-team-result"></span>');
+            fourthSpan.append(`${fixture.result.goalsAwayTeam}`);
+            singleFixture.append(fourthSpan);
+
+            let currDate = new Date(fixture.date);
+            let fifthSpan = $('<span class="fixtures-date"></span>');
+            fifthSpan.append(currDate.toDateString());
+            singleFixture.append(fifthSpan);
+            wrapperWithAttr.append(singleFixture);
+        }
+        $('#teamInfo').append(wrapperWithAttr);
+    }
+
+    function printPlayers(data) {
+
+        $('#teamInfo').empty();
+
+        let wrapper = $('<div class="player-wrapper"></div>');
+        let attributes = $('<div class="player-attributes"></div>');
+
+
+        attributes.append('<div class="player-name">Player Name</div>');
+        attributes.append('<div class="nationality">Nationality</div>');
+        attributes.append('<div class="position">Position</div>');
+        attributes.append('<div class="jersey-number">Jersey Number</div>');
+        attributes.append('<div class="contract-end">Contract End Date</div>');
+        attributes.append('<div class="market-value">Jersey Number</div>');
+        let wrapperWithAttr = wrapper.append(attributes);
+
+        for (let player of data.players) {
+            let singlePlayer = $('<div class="single-player"></div>');
+
+            let playerName = $('<span class="player-name"></span>');
+            playerName.append(`${player.name}`);
+            singlePlayer.append(playerName);
+
+            let nationality = $('<span class="nationality"></span>');
+            nationality.append(`${player.nationality}`);
+            singlePlayer.append(nationality);
+
+            let position = $('<span class="position"></span>');
+            position.append(`${player.position}`);
+            singlePlayer.append(position);
+
+            let jerseyNumber = $('<span class="jersey-number"></span>');
+            jerseyNumber.append(`${player.jerseyNumber}`);
+            singlePlayer.append(jerseyNumber);
+
+            let contractEnd = $('<span class="contract-end"></span>');
+            contractEnd.append(`${player.contractUntil}`);
+            singlePlayer.append(contractEnd);
+
+            let marketValue = $('<span class="market-value"></span>');
+            marketValue.append(`${player.marketValue}`);
+            singlePlayer.append(marketValue);
+
+            wrapperWithAttr.append(singlePlayer);
+        }
+        $('#teamInfo').append(wrapperWithAttr);
+    }
+
+    function currentTeam(team) {
+        let wrapper = $('<div class="fav-team"></div>');
+
+        $('.bigLogo').empty();
+        let url = `images/${team}.png`;
+
+        if(team==='ManU'){
+            team='Manchester United';
+        }
+        let teamName = $('<span class="team-big-name"></span>').append(team);
+
+        let paragraph = $('<p></p>');
+        let image = $('<img class="favTeamLogo"></img>').attr('src', url);
+        paragraph.append(image);
+        paragraph.append(teamName);
+
+        wrapper.append(paragraph);
+        $('.bigLogo').append(wrapper);
+    }
+
+    return {
+        currentTeam,
+        printPlayers,
+        printFixture,
+        printTable
     }
 }();
 

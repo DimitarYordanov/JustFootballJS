@@ -5,17 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Just Football</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    
-    
+
+
     <script src="ajax_provider.js"></script>
     <script src="visualizer.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="MitkoCSS.css" media="screen">
 </head>
 <body>
+<div class="screen">
+    <div class="field">
+        <img class="logo-one"  src="images/arsenal.png">
+        <img class="logo-two"  src="images/ManU.png">
+        <img class="logo-three"  src="images/Barcelona.png">
+        <img class="logo-four"  src="images/Real Madrid.png">
+        <img class="logo-one"  src="images/Bayern.png">
+        <img class="logo-two"  src="images/Juventus.png">
+        <img class="logo-three" src="images/Liverpool.png">
+        <img class="logo-four" src="images/PSG.png">
+        <div class="input-fav-team">
+            <span class="choose-label">Choose your favourite team:</span>
+            <select class="selectpicker">
+                <optgroup id="PL" label="Premier League">
+                    <option>Manchester United</option>
+                    <option>Liverpool</option>
+                    <option>Arsenal</option>
+                </optgroup>
+                <optgroup id="PD" label="Primera Division">
+                    <option>Barcelona</option>
+                    <option>Real Madrid</option>
+
+                </optgroup>
+                <optgroup id="SA" label="Seria A">
+                    <option>Juventus</option>
+                </optgroup>
+                <optgroup id="FL1" label="Ligue 1">
+                    <option>PSG</option>
+                </optgroup>
+                <optgroup id="BL1" label="Bundesliga">
+                    <option>Bayern</option>
+                </optgroup>
+            </select>
+        </div>
+        <button class="select-favTeam">Select</button>
+
+    </div>
+</div>
+<div hidden class="main-screen">
     <nav class="navbar navbar-inverse">
         <div class="container-fluid">
-            <div class="navbar-header"> <a href="#" class="navbar-toggle homebutton" data-toggle="collapse" >JustFootball</a>
+            <div class="navbar-header"><a href="#" class="navbar-toggle " data-toggle="collapse"></a>
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -24,36 +63,44 @@
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav">
-                    <li class="custom_li"><a href="#" class="teamButton" id="Arsenal"><img class="teamLogos" alt="Арсенал" src="images/arsenal.png" ></a></li>
-                    <li class="custom_li"><a href="#" class="teamButton" id="Barcelona"><img class="teamLogos" alt="Барселона" src="images/Barcelona.png" ></a></li>
-                    <li class="custom_li"><a href="#" class="teamButton" id="Real Madrid"><img class="teamLogos" alt="Реал Мадрид" src="images/Real Madrid.png" ></a></li>
-                    <li class="custom_li"><a href="#" class="teamButton" id="Bayern"><img class="teamLogos" alt="Байерн" src="images/Bayern.png" ></a></li>
-                    <li class="custom_li"><a href="#" class="teamButton" id="ManU"><img class="teamLogos" alt="Манчестър Юнайтед" src="images/ManU.png" ></a></li>
-                    <li class="custom_li"><a href="#" class="teamButton" id="Liverpool"><img class="teamLogos" alt="Ливърпул" src="images/Liverpool.png" ></a></li>
-                    <li class="custom_li"><a href="#" class="teamButton" id="Juventus"><img class="teamLogos" alt="Ювентус"src="images/Juventus.png" ></a></li>
-                    <li class="custom_li"><a href="#" class="teamButton" id="PSG" ><img class="teamLogos" alt="ПСЖ"src="images/PSG.png" ></a></li>
-
+                    <li  class="custom_li"><a href="#" class="teamButton" id="Arsenal"><img class="teamLogos" src="images/arsenal.png"></a>
+                    </li>
+                    <li class="custom_li" ><a href="#" class="teamButton" id="Barcelona"><img class="teamLogos" src="images/Barcelona.png"></a>
+                    </li>
+                    <li class="custom_li" ><a href="#" class="teamButton" id="Real Madrid"><img class="teamLogos" src="images/Real Madrid.png"></a>
+                    </li>
+                    <li class="custom_li" ><a href="#" class="teamButton" id="Bayern"><img class="teamLogos" src="images/Bayern.png"></a>
+                    </li>
+                    <li class="custom_li" ><a href="#" class="teamButton" id="ManU"><img class="teamLogos" src="images/ManU.png"></a>
+                    </li>
+                    <li class="custom_li" ><a href="#" class="teamButton" id="Liverpool"><img class="teamLogos" src="images/Liverpool.png"></a>
+                    </li>
+                    <li class="custom_li" ><a href="#" class="teamButton" id="Juventus"><img class="teamLogos" src="images/Juventus.png"></a>
+                    </li>
+                    <li class="custom_li" ><a href="#" class="teamButton" id="PSG"><img class="teamLogos" src="images/PSG.png"></a></li>
                 </ul>
-            </div>  
+            </div>
         </div>
     </nav>
 
     <div class="bigLogo "></div>
-    <nav class="navbar navbar-inverse">
-            <div class="left">
-                <ul>
-                    <li class="logobutton"><a class="detailsButton" href="#"><img alt="brand" src="images/logo.png" ></a></li>
-                    <li class="custom_li"><a  class="detailsButton" id="players" href="#"><img alt="Players" src="images/football.ico" > Players</a></li>
-                    <li class="button"><a class="detailsButton" id="league" href="#"><img alt="League" src="images/league.png" > League Table</a></li>
-                    <li class="button"><a class="detailsButton" id="fixtures" href="#"><img alt="Fixtures" src="images/fixtures.png" > Fixtures</a></li>
-                </ul>
-            </div>
-    </nav>
+
+
+    <ul class="inner-nav">
+        <li class="buttons"><a class="detailsButton button-players" id="players" href="#">Players</a></li>
+        <li class="buttons"><a class="detailsButton button-league" id="league" href="#"> League Table</a></li>
+        <li class="buttons"><a class="detailsButton button-fixtures" id="fixtures" href="#">Fixtures</a></li>
+    </ul>
+
+
+
     <div id="teamInfo"></div>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="StartUp.js"></script>
-    
-    
-    
+</div>
+<div class="modal"><!-- Place at bottom of page --></div>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="StartUp.js"></script>
+<script src="container.js"></script>
+
+
 </body>
 </html>

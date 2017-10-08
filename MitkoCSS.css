@@ -1,28 +1,111 @@
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+.modal {
+    display:    none;
+    position:   fixed;
+    z-index:    1000;
+    top:        0;
+    left:       0;
+    height:     100%;
+    width:      100%;
+    background: rgba( 255, 255, 255, .8 )
+    url('http://i.stack.imgur.com/FhHRx.gif')
+    50% 50%
+    no-repeat;
+}
+
+/* When the body has the loading class, we turn
+   the scrollbar off with overflow:hidden */
+body.loading {
     overflow: hidden;
-    background-color: #333;
 }
 
-li {
-    float: left;
+/* Anytime the body has the loading class, our
+   modal element will be visible */
+body.loading .modal {
+    display: block;
+}
+.field {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-row-gap:10%;
+    padding: 6%;
+    grid-column-start: 2;
+    grid-column-end: 39;
+    grid-row-start: 2;
+    grid-row-end: 39;
+    margin: 5%;
+    border-style: solid;
+    border-color:lightgray;
 }
 
-    li a {
-        display: block;
-        color: white;
-        text-align: center;
-        padding: 25px 72.5px;
-        text-decoration: none;
-    }
+.input-fav-team{
+    grid-column-start: 2;
+    grid-column-end: 7;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+}
+
+.choose-label {
+    padding-top: 5%;
+    font-size: 140%;
+}
+
+.selectpicker{
+    border-radius: 1%;
+    padding: 2%;
+}
+
+.logo-one{
+    padding: 10%;
+    width: 80%;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.logo-two{
+    padding: 10%;
+    width: 80%;
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+.logo-three{
+    padding: 10%;
+    width: 80%;
+    grid-column-start: 5;
+    grid-column-end: 6;
+}
+.logo-four{
+     padding: 10%;
+     width: 80%;
+     grid-column-start: 7;
+     grid-column-end: 8;
+ }
+
+.image-wrapper{
+    background:round;
+    text-align: center;
+    background-color: aqua;
+}
+.choose-screen{
+    width: 25%;
+    align-self: center;
+    text-align: center;
+}
+.screen{
+    display: grid;
+    grid-template-columns: repeat(40, 1fr);
+    grid-template-rows: repeat(40, 1fr);
+}
+.team-big-name{
+    text-align: center;
+    margin-left: 20%;
+    font-size: 280%;
+}
 
 .logobutton {
     color: white;
     text-align: center;
-    height: auto;
-    width: auto;
 }
 
 .center {
@@ -51,24 +134,13 @@ mottotext {
     color: white
 }
 /* Change the link color to #111 (black) on hover */
-custom_li:hover {
-    background-color: aquamarine;
-}
 
 .navbar-inverse .navbar-nav > li > a:focus, .navbar-inverse .navbar-nav > li > a:hover {
-    background-color: aquamarine
+    background-color: darkred
 }
 
 .custom_li {
     display: inline-block;
-    height: 72.5px;
-    width: 150px;
-}
-
-button {
-    display: inline-block;
-    height: 72.5px;
-    width: 155px;
 }
 
 .container-fluid {
@@ -93,17 +165,6 @@ button {
     height: 8.02%;
     overflow: auto;
 }
-
-.homebutton {
-    font-size: 44px;
-    font-style: italic;
-    text-decoration: none;
-}
-
-    .homebutton:hover {
-        background-color: aquamarine;
-    }
-
 /* Players table style: */
 
 .player-wrapper {
@@ -123,7 +184,7 @@ button {
 }
 
 .player-name {
-    
+
     display: inline-block;
     grid-column-start: 1;
     grid-column-end: 3;
@@ -131,7 +192,7 @@ button {
 }
 
 .nationality {
-    
+
     display: inline-block;
     grid-column-start: 3;
     grid-column-end: 5;
@@ -177,54 +238,6 @@ button {
     border-bottom-color: rgba(15,2,16,0.25);
 }
 
-/* Fixtures style: */
-
-.single-fixture {
-    display: grid;
-    grid-template-columns: repeat(16,1fr);
-    border-bottom: solid;
-    border-bottom-color: rgba(15,2,16,0.25);
-}
-
-    .fixtures-wrapper {
-    display: grid;
-    padding: 1%;
-    margin: 1%;
-    grid-template-rows: repeat(2,1fr);
-    border-radius: 2%;
-    border-style: solid;
-    border-color: rgba(16,8,15,0.25);
-}
-
-.fixtures-attributes div {
-    font-weight: bold;
-}
-
-.fixtures-home-team {
-    padding-left: 2%;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    text-align: center
-}
-
-.fixtures-guest-team {
-    width: 25%;
-    height: auto;
-    grid-column-start: 2;
-    grid-column-end: 3;
-    text-align: center
-}
-
-.fixtures-home-team-result {
-    grid-column-start: 3;
-    grid-column-end: 4;
-}
-
-.fixtures-guest-team-result {
-    grid-column-start: 4;
-    grid-column-end: 5;
-}
-
 .wrapper {
     display: grid;
     padding: 1%;
@@ -236,15 +249,18 @@ button {
     border-color: rgba(16,8,15,0.25);
 
 }
+
 .attributes div{
     font-weight: bold;
 }
+
 .logo{
-    width: 25%;
+    width: 30%;
     height: auto;
     grid-column-start: 2;
     grid-column-end: 3;
 }
+
 .attributes {
     display: grid;
     grid-template-columns: repeat(16, 1fr);
@@ -252,60 +268,60 @@ button {
     border-bottom-color: black;
     border-radius: 8%;
 }
+
 .single-team{
     display: grid;
     grid-template-columns: repeat(16,1fr);
     border-bottom: solid;
     border-bottom-color: rgba(15,2,16,0.25);
-
 }
-.teams{
 
+.teams{
     grid-column-start: 3;
     grid-column-end: 7;
 }
+
 .rank{
     padding-left: 2%;
     grid-column-start: 1;
     grid-column-end: 2;
 }
-.mp{
 
+.mp{
     grid-column-start: 7;
     grid-column-end: 8;
 }
-.wins{
 
+.wins{
     grid-column-start: 8;
     grid-column-end: 9;
 }
-.draws{
 
+.draws{
     grid-column-start: 9;
     grid-column-end: 10;
 }
-.losses{
 
+.losses{
     grid-column-start: 10;
     grid-column-end: 11;
 }
-.gf{
 
+.gf{
     grid-column-start: 11;
     grid-column-end: 12;
 }
-.ga{
 
+.ga{
     grid-column-start: 12;
     grid-column-end: 13;
 }
-.gd{
 
+.gd{
     grid-column-start: 13;
     grid-column-end: 14;
 }
 .points{
-
     grid-column-start: 14;
     grid-column-end: 16;
 }
@@ -329,42 +345,123 @@ li a {
     padding: 25px 72.5px;
     text-decoration: none;
 }
-li button {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 25px 72.5px;
-    text-decoration: none;
-}
-
 /* Change the link color to #111 (black) on hover */
-li a:hover {
-    background-color: aquamarine;
-}
+
 .nav-element{
     color: black;
 }
+
 .custom_li{
     display:inline-block;
     height: 90px;
     width: 230px;
  }
- .container-fluid{
-     background-color: #302E2E;
- }
+
+.container-fluid{
+    background-color: #302E2E;
+}
 
 .teamLogos {
-    height: 41px;
-    width: 41px;
+    height: 20%;
+    width: 20%;
 }
+
 .favTeamLogo {
-    height: 13%;
-    width: 13%;
+    height: auto;
+    width: 10%;
+    margin-left: 10%;
+    margin-bottom: 2%;
 }
 .navbar-toggle{
     float: left;
 }
+
 .detailsButton{
-    height: 23px;
-    width: 23px;
+    text-decoration: none;
+    animation: none;
+}
+.button-league{
+grid-column-start: 1;
+    grid-column-end: 2;
+}
+.button-players{
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+.button-fixtures{
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+.inner-nav{
+    display: grid;
+
+    grid-template-columns: repeat(3,1fr);
+
+}
+.detailsButton:hover{
+    text-decoration:none;
+    animation:none ;
+    color: white;
+    background-color: darkred;
+    text-effect: none;
+}
+
+
+/* Fixtures style: */
+
+.single-fixture {
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    border-bottom: solid;
+    border-bottom-color: rgba(15,2,16,0.25);
+}
+
+.fixtures-wrapper {
+    display: grid;
+    padding-right: 10%;
+    padding-left: 10%;
+    padding-top:5%;
+    padding-bottom:5%;
+    margin: 1%;
+    grid-template-rows: repeat(2,1fr);
+    border-radius: 2%;
+    border-style: solid;
+    border-color: rgba(16,8,15,0.25);
+}
+
+.fixtures-attributes  {
+    font-weight: bold;
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+}
+
+.fixtures-home-team {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    text-align: center
+}
+
+.fixtures-guest-team {
+    grid-column-start: 5;
+    grid-column-end: 7;
+    text-align: center
+}
+
+.fixtures-home-team-result {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    text-align: center
+}
+
+.fixtures-guest-team-result {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    text-align: center
+}
+
+.fixtures-date {
+    grid-column-start: 8;
+    grid-column-end: 10;
+    text-align: center
 }
