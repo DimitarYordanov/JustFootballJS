@@ -25,48 +25,48 @@ const visualizerModule = function () {
 
             let singleTeam = $('<div class="single-team">');
 
-            let firstSpan = $('<span class="rank"></span>');
-            firstSpan.append(`${rank.position}`);
-            singleTeam.append(firstSpan);
+            let position = $('<span class="rank"></span>');
+            position.append(`${rank.position}`);
+            singleTeam.append(position);
 
             let logo = $('<img class="logo"></img>').attr('src', rank.crestURI);
             singleTeam.append(logo);
 
-            let secondSpan = $(' <span class="teams"></span>');
-            secondSpan.append(`${rank.teamName}`);
-            singleTeam.append(secondSpan);
+            let names = $(' <span class="teams"></span>');
+            names.append(`${rank.teamName}`);
+            singleTeam.append(names);
 
-            let thirdSpan = $('<span class="mp"></span>');
-            thirdSpan.append(`${rank.playedGames}`);
-            singleTeam.append(thirdSpan);
+            let playedMatches = $('<span class="mp"></span>');
+            playedMatches.append(`${rank.playedGames}`);
+            singleTeam.append(playedMatches);
 
-            let fourthSpan = $('<span class="wins"></span>');
-            fourthSpan.append(`${rank.wins}`);
-            singleTeam.append(fourthSpan);
+            let wins = $('<span class="wins"></span>');
+            wins.append(`${rank.wins}`);
+            singleTeam.append(wins);
 
-            let fifthSpan = $('<span class="draws"></span>');
-            fifthSpan.append(`${rank.draws}`);
-            singleTeam.append(fifthSpan);
+            let draws = $('<span class="draws"></span>');
+            draws.append(`${rank.draws}`);
+            singleTeam.append(draws);
 
-            let sixthSpan = $('<span class="losses"></span>');
-            sixthSpan.append(`${rank.losses}`);
-            singleTeam.append(sixthSpan);
+            let losses = $('<span class="losses"></span>');
+            losses.append(`${rank.losses}`);
+            singleTeam.append(losses);
 
-            let tenthSpan = $('<span class="gf"></span>');
-            tenthSpan.append(`${rank.goals}`);
-            singleTeam.append(tenthSpan);
+            let goalsFor = $('<span class="gf"></span>');
+            goalsFor.append(`${rank.goals}`);
+            singleTeam.append(goalsFor);
 
-            let seventhSpan = $('<span class="ga"></span>');
-            seventhSpan.append(`${rank.goalsAgainst}`);
-            singleTeam.append(seventhSpan);
+            let goalsAgainst = $('<span class="ga"></span>');
+            goalsAgainst.append(`${rank.goalsAgainst}`);
+            singleTeam.append(goalsAgainst);
 
-            let eightSpan = $('<span class="gd"></span>');
-            eightSpan.append(`${rank.goalDifference}`);
-            singleTeam.append(eightSpan);
+            let goalDiff = $('<span class="gd"></span>');
+            goalDiff.append(`${rank.goalDifference}`);
+            singleTeam.append(goalDiff);
 
-            let ninthSpan = $('<span class="points"></span>');
-            ninthSpan.append(`${rank.points}`);
-            singleTeam.append(ninthSpan);
+            let points = $('<span class="points"></span>');
+            points.append(`${rank.points}`);
+            singleTeam.append(points);
 
 
             wrapperWithAttr.append(singleTeam);

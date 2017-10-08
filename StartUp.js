@@ -59,7 +59,7 @@ $(function teamID() {
             container.ajaxProvider.visualizeTeamFixtures(container.visualizer.printFixture, currentTeam, currentLeague);
 
         } else if (buttonClicked === 'players') {
-            container.ajaxProvider.visualizeTeamPlayers(vcontainer.visualizer.printPlayers, currentTeam, currentLeague);
+            container.ajaxProvider.visualizeTeamPlayers(container.visualizer.printPlayers, currentTeam, currentLeague);
         }
 
     })
