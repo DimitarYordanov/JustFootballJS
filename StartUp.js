@@ -11,50 +11,51 @@ $(function teamID (){
         console.log(buttonClicked)
         if(buttonClicked === 'Barcelona'){
             console.log(1)
-            $('#teamInfo').empty();
+            visualizerModule.currentTeam(buttonClicked);
             ajaxModule.visualizeTable(visualizerModule.printTable,'PD');
             currentLeague = 'PD';
             
             
         }else if(buttonClicked === 'Arsenal'){
             
-            $('#teamInfo').empty();
-            ajaxModule.visualizeTeamPlayers(visualizerModule.printFixture, 'Manchester United FC', 'PL');
+            
+            visualizerModule.currentTeam(buttonClicked);
+            ajaxModule.visualizeTable(visualizerModule.printTable,'PL');
             currentLeague = 'PL';
             //currentTeam='Arsenal';
             
         }else if(buttonClicked === 'Real Madrid'){
-            $('#teamInfo').empty();
+            visualizerModule.currentTeam(buttonClicked);
             ajaxModule.visualizeTable(visualizerModule.printTable, 'PD');
             currentLeague = 'PD';
             //currentTeam='Real Madrid';
             
         }else if(buttonClicked === 'Bayern'){
-            $('#teamInfo').empty();
+            visualizerModule.currentTeam(buttonClicked);
             ajaxModule.visualizeTable(visualizerModule.printTable, 'BL1');
             currentLeague = 'BL1';
             //currentTeam='Bayern';
             
         }else if(buttonClicked === 'ManU'){
-            $('#teamInfo').empty();
+            visualizerModule.currentTeam(buttonClicked);
             ajaxModule.visualizeTable(visualizerModule.printTable, 'PL');
             currentLeague = 'PL';
             //currentTeam='ManU';
             
         }else if(buttonClicked === 'Liverpool'){
-            $('#teamInfo').empty();
+            visualizerModule.currentTeam(buttonClicked);
             ajaxModule.visualizeTable(visualizerModule.printTable, 'PL');
             currentLeague = 'PL';
             //currentTeam='Liverpool';
             
         }else if(buttonClicked === 'Juventus'){
-            $('#teamInfo').empty();
+            visualizerModule.currentTeam(buttonClicked);
             ajaxModule.visualizeTable(visualizerModule.printTable, 'SA');
             currentLeague = 'SA';
             //currentTeam='Juventus';
             
         }else if(buttonClicked === 'PSG'){
-            $('#teamInfo').empty();
+            visualizerModule.currentTeam(buttonClicked);
             ajaxModule.visualizeTable(visualizerModule.printTable, 'FL1');
             currentLeague = 'FL1';
             //currentTeam='PSG';
@@ -65,8 +66,7 @@ $(function teamID (){
         $('.detailsButton').on('click', (event) => {
             const buttonClicked = $(event.currentTarget).attr('id')
             
-           
-            
+
             if(buttonClicked === 'league'){
     
                 $('#teamInfo').empty();
@@ -79,7 +79,7 @@ $(function teamID (){
                 
             }else if(buttonClicked === 'players'){
                 $('#teamInfo').empty();
-                ajaxModule.visualizeTeamPlayers(visualizerModule.printTable, currentTeam, currentLeague);
+                ajaxModule.visualizeTeamPlayers(visualizerModule.printPlayers, currentTeam, currentLeague);
                 
             }
 

@@ -18,15 +18,6 @@ li {
         text-decoration: none;
     }
 
-
-
-/*.button {
-    color: white;
-    text-align: center;
-    height: auto;
-    width: auto;
-}*/
-
 .logobutton {
     color: white;
     text-align: center;
@@ -67,14 +58,7 @@ custom_li:hover {
 .navbar-inverse .navbar-nav > li > a:focus, .navbar-inverse .navbar-nav > li > a:hover {
     background-color: aquamarine
 }
-/*.navbar-header {
-    height: 72.5px;
-    width: 157px;
-    float: left;
-    padding: 15px;
-    text-align: center;
-    width: 100%;
-}*/
+
 .custom_li {
     display: inline-block;
     height: 72.5px;
@@ -132,46 +116,49 @@ button {
     border-color: rgba(16,8,15,0.25);
 }
 
-.player-attributes div {
+.player-attributes {
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
     font-weight: bold;
 }
 
 .player-name {
-    padding-left: 2%;
+    
+    display: inline-block;
     grid-column-start: 1;
-    grid-column-end: 2;
-    text-align: center
-}
-
-.nationality {
-    width: 25%;
-    height: auto;
-    grid-column-start: 2;
     grid-column-end: 3;
     text-align: center
 }
 
-.position {
+.nationality {
+    
+    display: inline-block;
     grid-column-start: 3;
-    grid-column-end: 4;
-    text-align: center
-}
-
-.jersey-number {
-    grid-column-start: 4;
     grid-column-end: 5;
     text-align: center
 }
 
-.contract-end {
+.position {
     grid-column-start: 5;
-    grid-column-end: 6;
+    grid-column-end: 7;
+    text-align: center
+}
+
+.jersey-number {
+    grid-column-start: 7;
+    grid-column-end: 8;
+    text-align: center
+}
+
+.contract-end {
+    grid-column-start: 8;
+    grid-column-end: 10;
     text-align: center
 }
 
 .market-value {
-    grid-column-start: 6;
-    grid-column-end: 7;
+    grid-column-start: 10;
+    grid-column-end: 12;
     text-align: center
 }
 
@@ -185,11 +172,10 @@ button {
 
 .single-player {
     display: grid;
-    grid-template-columns: repeat(7,1fr);
+    grid-template-columns: repeat(12,1fr);
     border-bottom: solid;
     border-bottom-color: rgba(15,2,16,0.25);
 }
-
 
 /* Fixtures style: */
 
@@ -239,14 +225,6 @@ button {
     grid-column-end: 5;
 }
 
-.fixtures-datetime {
-}
-
-.home-team-result {
-}
-
-.guest-team-result {
-}
 .wrapper {
     display: grid;
     padding: 1%;
@@ -374,4 +352,19 @@ li a:hover {
  .container-fluid{
      background-color: #302E2E;
  }
- 
+
+.teamLogos {
+    height: 41px;
+    width: 41px;
+}
+.favTeamLogo {
+    height: 13%;
+    width: 13%;
+}
+.navbar-toggle{
+    float: left;
+}
+.detailsButton{
+    height: 23px;
+    width: 23px;
+}
