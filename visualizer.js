@@ -6,7 +6,8 @@ const visualizerModule = function () {
 
         let wrapper = $('<div class="wrapper"></div>');
         let attributes = $('<div class="attributes"></div>');
-
+        let leagueName=$('<span class="league-name"></span>').append(data.leagueCaption);
+        wrapper.append(leagueName);
         attributes.append('<div class="rank">Standing</div>');
         attributes.append('<div class="logo"></div>');
         attributes.append('<div class="teams">Teams</div>');

@@ -23,6 +23,11 @@ body.loading {
 body.loading .modal {
     display: block;
 }
+.league-name{
+    font-weight: bold;
+    font-size: 150%;
+    text-align: center;
+}
 .field {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
@@ -53,6 +58,7 @@ body.loading .modal {
 .selectpicker{
     border-radius: 1%;
     padding: 2%;
+    margin-right: 50%;
 }
 
 .logo-one{
@@ -85,7 +91,7 @@ body.loading .modal {
 .image-wrapper{
     background:round;
     text-align: center;
-    background-color: aqua;
+
 }
 .choose-screen{
     width: 25%;
@@ -375,22 +381,29 @@ li a {
 .navbar-toggle{
     float: left;
 }
+.select-favTeam{
+    background-color: grey;
+    color:white;
+    border:hidden;
+    margin-left: 5%;
+    border-radius: 2%;
+}
+.select-favTeam:hover{
+    background-color: darkgreen;
+    color: white;
 
+}
+.text-select-favTeam{
+    font-size: 125%;
+}
 .detailsButton{
     text-decoration: none;
     animation: none;
 }
-.button-league{
-grid-column-start: 1;
-    grid-column-end: 2;
-}
-.button-players{
-    grid-column-start: 2;
-    grid-column-end: 3;
-}
-.button-fixtures{
-    grid-column-start: 3;
-    grid-column-end: 4;
+.detailsButton:focus{
+    color: white;
+    background-color: darkred;
+    text-decoration: none;
 }
 
 .inner-nav{
