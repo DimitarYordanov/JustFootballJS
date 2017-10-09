@@ -7,11 +7,25 @@ $(function teamID() {
         $('.main-screen').show();
         let choice = $(".selectpicker option:selected").val();
 
+        currentLeague = 'PL';
+
         if (choice === 'Manchester United') {
             choice = 'ManU';
         }
 
-        currentLeague = 'PL';
+        if(choice === 'Barcelona' || choice === 'Real Madrid'){
+            currentLeague = 'PD';
+        }else if(choice === 'Juventus'){
+            currentLeague = 'SA';
+        }else if(choice === 'PSG'){
+            currentLeague = 'FL1'
+        }else if(choice === 'Bayern'){
+            currentLeague = 'BL1'
+        }
+
+        
+
+        
         currentTeam = choice;
         container.visualizer.currentTeam(choice);
     });
