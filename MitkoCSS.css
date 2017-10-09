@@ -396,9 +396,10 @@ li a {
 .text-select-favTeam{
     font-size: 125%;
 }
-.detailsButton{
+.detailsButton {
     text-decoration: none;
     animation: none;
+
 }
 .detailsButton:focus{
     color: white;
@@ -406,10 +407,23 @@ li a {
     text-decoration: none;
 }
 
-.inner-nav{
-    display: grid;
+@media screen and( max-width: 500px) {
+    .inner-nav{
+        display: flex;
 
-    grid-template-columns: repeat(3,1fr);
+        flex-direction: column;
+    }
+    .detailsButton{
+        display:inline-block;
+    }
+}
+
+.inner-nav{
+
+    display: flex;
+
+    justify-content:center;
+    flex-wrap:wrap;
 
 }
 .detailsButton:hover{
