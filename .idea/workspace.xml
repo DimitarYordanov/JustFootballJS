@@ -4,7 +4,6 @@
     <list default="true" id="d3bdaf76-c996-4c9f-8374-69a5954eb9f2" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MitkoCSS.css" afterPath="$PROJECT_DIR$/MitkoCSS.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/visualizer.js" afterPath="$PROJECT_DIR$/visualizer.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -35,20 +34,20 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="833">
-              <caret line="49" column="71" lean-forward="false" selection-start-line="49" selection-start-column="71" selection-end-line="49" selection-end-column="71" />
+            <state relative-caret-position="357">
+              <caret line="88" column="0" lean-forward="false" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
               <folding>
-                <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MitkoCSS.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MitkoCSS.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/MitkoCSS.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="143" column="42" lean-forward="false" selection-start-line="143" selection-start-column="37" selection-end-line="143" selection-end-column="42" />
+            <state relative-caret-position="178">
+              <caret line="413" column="31" lean-forward="true" selection-start-line="413" selection-start-column="8" selection-end-line="413" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -64,7 +63,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StartUp.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="StartUp.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/StartUp.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
@@ -99,7 +98,6 @@
       <find>league</find>
       <find>choose</find>
       <find>label</find>
-      <find>inner</find>
       <find>aqu</find>
       <find>logo</find>
       <find>cust</find>
@@ -114,6 +112,7 @@
       <find>select-favTeam</find>
       <find>selectp</find>
       <find>focus</find>
+      <find>inner</find>
     </findStrings>
     <replaceStrings>
       <replace>league</replace>
@@ -132,8 +131,8 @@
         <option value="$PROJECT_DIR$/JustFootball.UnitTests/visualizer.Tests.js" />
         <option value="$PROJECT_DIR$/ajax_provider.js" />
         <option value="$PROJECT_DIR$/StartUp.js" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/visualizer.js" />
+        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/MitkoCSS.css" />
       </list>
     </option>
@@ -272,12 +271,12 @@
       <option name="presentableId" value="Default" />
       <updated>1507069147253</updated>
       <workItem from="1507069149961" duration="39741000" />
-      <workItem from="1507484600616" duration="15925000" />
+      <workItem from="1507484600616" duration="16887000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55666000" />
+    <option name="totallyTimeSpent" value="56628000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1552" height="840" extended-state="6" />
@@ -327,7 +326,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -351,14 +350,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/container.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="4" lean-forward="false" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ajax_provider.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2737">
@@ -367,13 +358,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/StartUp.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="833">
-          <caret line="49" column="71" lean-forward="false" selection-start-line="49" selection-start-column="71" selection-end-line="49" selection-end-column="71" />
-          <folding>
-            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
+        <state relative-caret-position="255">
+          <caret line="15" column="49" lean-forward="true" selection-start-line="15" selection-start-column="49" selection-end-line="15" selection-end-column="49" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -385,18 +374,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MitkoCSS.css">
+    <entry file="file://$PROJECT_DIR$/container.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="143" column="42" lean-forward="false" selection-start-line="143" selection-start-column="37" selection-end-line="143" selection-end-column="42" />
+        <state relative-caret-position="119">
+          <caret line="7" column="4" lean-forward="false" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/StartUp.js">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="49" lean-forward="true" selection-start-line="15" selection-start-column="49" selection-end-line="15" selection-end-column="49" />
+        <state relative-caret-position="357">
+          <caret line="88" column="0" lean-forward="false" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
+          <folding>
+            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MitkoCSS.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="413" column="31" lean-forward="true" selection-start-line="413" selection-start-column="8" selection-end-line="413" selection-end-column="31" />
           <folding />
         </state>
       </provider>
